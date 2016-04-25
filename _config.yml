@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 安卓弟的博客
+title: 区长的博客
 subtitle: 业精于勤，荒于嬉；行成于思，毁于随
-description: 安卓弟的博客|区长的博客|Android|Java|React-Native|热修复|插件化|Google|ORM|爬虫
-author: Li Zhangqu
+description: 区长的博客|安卓弟的博客|Android|Java|React-Native|热修复|插件化|Google|ORM|爬虫
+author: 区长
 email: 513163535@qq.com
 language: zh-CN
 timezone:
@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: pacman
 #plugins:
 #- hexo-generator-feed
 #- hexo-generator-sitemap
