@@ -1,0 +1,52 @@
+<div id="footer" >
+	<% if(theme.author_img_enable == true){ %>
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<% } %>
+	<% if(theme.author.intro_line1&&theme.author.intro_line2){ %>
+	<section class="info">
+		<p> <%= theme.author.intro_line1 %> <br/>
+			<%= theme.author.intro_line2 %></p>
+	</section>
+	 <% } %>
+	<div class="social-font clearfix">
+		<% if(theme.author.weibo){ %>
+		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" title="weibo"></a>
+		<% } %>
+		<% if(theme.author.zhihu){ %>
+		<a href="http://www.zhihu.com/people/<%= theme.author.zhihu %>" target="_blank" title="twitter"></a>
+		<% } %>
+		<% if(theme.author.twitter){ %>
+		<a href="https://twitter.com/<%=theme.author.twitter %>" target="_blank" title="twitter"></a>
+		<% } %>
+		<% if(theme.author.github){ %>
+		<a href="https://github.com/<%=theme.author.github %>" target="_blank" title="github"></a>
+		<% } %>
+		<% if(theme.author.facebook){ %>
+		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" title="facebook"></a>
+		<% } %>
+		<% if(theme.author.linkedin){ %>
+        <a href="https://www.linkedin.com/<%=theme.author.linkedin %>" target="_blank" title="linkedin"></a>
+        <% } %>
+	</div>
+		<p class="copyright"> © <%= new Date().getFullYear() %> Powered by Li Zhangqu 
+		<% if (theme.busuanzi.enable){ %>
+			,
+			<span id="busuanzi_container_site_pv">
+				This Site  <span id="busuanzi_value_site_pv"></span>
+			</span>
+			,
+			<span id="busuanzi_container_page_pv">
+			  This Page  <span id="busuanzi_value_page_pv"></span>
+			</span>
+		<% } %>
+			
+		<!--<% if (config.author) { %>
+		<a href="<%= config.url %>" target="_blank" title="<%= config.author %>"><%= config.author %></a>
+		<% } else {%>
+		<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
+		<% } %>-->
+		</p>
+</div>
