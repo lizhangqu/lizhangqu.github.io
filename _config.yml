@@ -5,7 +5,7 @@
 # Site
 title: 区长的博客
 subtitle: 业精于勤，荒于嬉；行成于思，毁于随
-description: 区长的博客|安卓弟的博客|Android|Java|React-Native|热修复|插件化|Google|ORM|爬虫
+description: 区长的博客|安卓弟的博客|Android|Java|React-Native|热修复|插件化|OkHttp|网络库|RxJava
 author: 区长
 email: 513163535@qq.com
 language: zh-CN
@@ -65,16 +65,19 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: pacman
-#plugins:
-#- hexo-generator-feed
-#- hexo-generator-sitemap
 
-#rss: /atom.xml
-#sitemap:
-#path: sitemap.xml
-#baidusitemap:
-#path: baidusitemap.xml
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
@@ -84,6 +87,6 @@ deploy:
 
 backup:
     type: git
-    message: update from hexo back plugin
+    message: update from hexo bake plugin
     repository:
        github: git@github.com:lizhangqu/lizhangqu.github.io.git,hexo

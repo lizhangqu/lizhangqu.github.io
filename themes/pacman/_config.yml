@@ -13,8 +13,8 @@ menu:
 
 #### Widgets
 widgets: 
-
-- pay
+- weibo
+#- pay
 ##- category
 - tag
 - rss
