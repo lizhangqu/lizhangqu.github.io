@@ -4,6 +4,7 @@ menu:
   归档: /archives
   标签: /tags
   分类: /categories
+  关于: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -13,8 +14,8 @@ menu:
 
 #### Widgets
 widgets: 
+- pay
 - weibo
-#- pay
 ##- category
 - tag
 - rss
