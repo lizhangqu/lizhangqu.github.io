@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: pacman
+theme: next
 
 
 feed:
@@ -87,6 +87,6 @@ deploy:
 
 backup:
     type: git
-    message: update from hexo bake plugin
+    message: update from hexo backup plugin
     repository:
        github: git@github.com:lizhangqu/lizhangqu.github.io.git,hexo
