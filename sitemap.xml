@@ -2,14 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lizhangqu.github.io/2015/11/26/Android-Design-Pattern/</loc>
+    <loc>http://lizhangqu.github.io/categories/index.html</loc>
     
-    <lastmod>2017-01-11T14:42:27.000Z</lastmod>
+    <lastmod>2017-01-11T16:22:04.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lizhangqu.github.io/404.html</loc>
+    <loc>http://lizhangqu.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-01-11T16:20:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lizhangqu.github.io/about/index.html</loc>
+    
+    <lastmod>2017-01-11T16:19:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lizhangqu.github.io/2015/11/26/Android-Design-Pattern/</loc>
     
     <lastmod>2017-01-11T14:42:27.000Z</lastmod>
     
@@ -23,14 +37,7 @@
   </url>
   
   <url>
-    <loc>http://lizhangqu.github.io/about/index.html</loc>
-    
-    <lastmod>2017-01-11T14:42:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lizhangqu.github.io/categories/index.html</loc>
+    <loc>http://lizhangqu.github.io/404.html</loc>
     
     <lastmod>2017-01-11T14:42:27.000Z</lastmod>
     
@@ -38,13 +45,6 @@
   
   <url>
     <loc>http://lizhangqu.github.io/pay/index.html</loc>
-    
-    <lastmod>2017-01-11T14:42:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lizhangqu.github.io/tags/index.html</loc>
     
     <lastmod>2017-01-11T14:42:27.000Z</lastmod>
     
