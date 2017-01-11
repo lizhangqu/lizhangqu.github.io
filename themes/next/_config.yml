@@ -15,6 +15,7 @@ rss:
 
 # Specify the date when the site was setup
 #since: 2015
+since: 2017
 
 # icon between year and author @Footer
 authoricon: heart
@@ -28,7 +29,12 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
+
+
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wechat.jpeg
+#alipay: /images/alipay.jpeg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -37,12 +43,13 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
+
 
 
 # Enable/Disable menu icons.
@@ -70,9 +77,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -134,6 +141,13 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
+social:
+  GitHub: https://github.com/lizhangqu
+  知乎: http://www.zhihu.com/people/zhangqu-li
+  微博: http://weibo.com/sbsujjbcy
+  Twitter: https://twitter.com/lizhangqu0504
+  G+: https://plus.google.com/u/0/114779957383765957041
+  
 
 
 # Social Links Icons
@@ -154,7 +168,7 @@ social_icons:
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
-
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -193,6 +207,10 @@ sidebar:
 #links_layout: inline
 #links:
   #Title: http://example.com/
+
+links_title: Links
+links:
+  区长的CSDN: http://blog.csdn.net/sbsujjbcy
 
 
 # ---------------------------------------------------------------
@@ -264,10 +282,11 @@ mathjax:
 
 # Baidu Analytics ID
 #baidu_analytics:
+baidu_analytics: b5e95713d9398479a8df5c83e0159382
 
 # Duoshuo ShortName
 #duoshuo_shortname:
-
+duoshuo_shortname: lizhangqu
 # Disqus
 #disqus_shortname:
 

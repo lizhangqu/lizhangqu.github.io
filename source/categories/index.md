@@ -1,3 +1,3 @@
 layout: categories
-title: categories
+title: 分类
 ---

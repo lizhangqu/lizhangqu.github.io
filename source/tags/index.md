@@ -1,3 +1,3 @@
 layout: tags
-title: tags
+title: 标签
 ---
