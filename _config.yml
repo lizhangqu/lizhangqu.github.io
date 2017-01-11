@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 区长的博客
+title: 区长
 subtitle: 业精于勤，荒于嬉；行成于思，毁于随
-description: 区长的博客|安卓弟的博客|Android|Java|React-Native|热修复|插件化|OkHttp|网络库|RxJava
+description: 区长|Android Developer
 author: 区长
-email: 513163535@qq.com
+email: li330324@gmail.com
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://lizhangqu.com
+url: http://lizhangqu.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
