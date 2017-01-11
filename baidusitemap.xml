@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://lizhangqu.github.io/2015/11/26/Android-Design-Pattern/</loc>
+    <lastmod>2017-01-11T14:42:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 开发中常见的设计模式</title>
+        <pubTime>2015-11-26T04:19:16.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Design Pattern</tag>
+         
+        <tag>安卓</tag>
+         
+        <tag>设计模式</tag>
+         
+        <tag>单例模式</tag>
+         
+        <tag>Build模式</tag>
+         
+        <tag>观察者模式</tag>
+         
+        <tag>原型模式</tag>
+         
+        <tag>策略模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://lizhangqu.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+</urlset>
