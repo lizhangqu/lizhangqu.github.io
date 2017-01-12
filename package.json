@@ -21,6 +21,7 @@
     "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "hexo-filter-auto-spacing": "^0.2.1"
+    "hexo-filter-auto-spacing": "^0.2.1",
+    "hexo-generator-searchdb": "^1.0.3"
   }
 }
