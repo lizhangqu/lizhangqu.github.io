@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lizhangqu.github.io/"/>
-  <updated>2017-01-11T14:42:27.000Z</updated>
+  <updated>2017-01-11T16:45:07.000Z</updated>
   <id>http://lizhangqu.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lizhangqu.github.io/2015/11/26/Android-Design-Pattern/"/>
     <id>http://lizhangqu.github.io/2015/11/26/Android-Design-Pattern/</id>
     <published>2015-11-26T04:19:16.000Z</published>
-    <updated>2017-01-11T14:42:27.000Z</updated>
+    <updated>2017-01-11T16:45:07.000Z</updated>
     
     <content type="html"><![CDATA[<p>&#x5BF9;&#x4E8E;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x6709;&#x65F6;&#x5019;&#x5C31;&#x662F;&#x4E00;&#x9053;&#x574E;&#xFF0C;&#x4F46;&#x662F;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x53C8;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x8FC7;&#x4E86;&#x8FD9;&#x9053;&#x574E;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x6C34;&#x5E73;&#x63D0;&#x9AD8;&#x4E00;&#x4E2A;&#x6863;&#x6B21;&#x3002;&#x800C;&#x5728;android&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x5FC5;&#x8981;&#x7684;&#x4E86;&#x89E3;&#x4E00;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x53C8;&#x662F;&#x975E;&#x5E38;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x60F3;&#x7CFB;&#x7EDF;&#x7684;&#x5B66;&#x4E60;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x540C;&#x5B66;&#xFF0C;&#x8FD9;&#x91CC;&#x63A8;&#x8350;2&#x672C;&#x4E66;&#x3002;&#x4E00;&#x672C;&#x662F;Head First&#x7CFB;&#x5217;&#x7684;Head Hirst Design Pattern&#xFF0C;&#x82F1;&#x6587;&#x597D;&#x7684;&#x53EF;&#x4EE5;&#x770B;&#x82F1;&#x6587;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x8BFB;&#x51E0;&#x904D;&#x3002;&#x53E6;&#x5916;&#x4E00;&#x672C;&#x662F;&#x5927;&#x8BDD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x3002;</p>
 <h2 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;"><a href="#&#x5355;&#x4F8B;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;"></a>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h2><p>&#x9996;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E9B;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
