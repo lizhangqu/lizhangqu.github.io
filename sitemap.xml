@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lizhangqu.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-01-12T14:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lizhangqu.github.io/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
     
-    <lastmod>2017-01-12T14:04:18.000Z</lastmod>
+    <lastmod>2017-01-12T14:25:24.000Z</lastmod>
     
   </url>
   
@@ -30,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://lizhangqu.github.io/about/index.html</loc>
-    
-    <lastmod>2017-01-12T04:31:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lizhangqu.github.io/categories/index.html</loc>
     
     <lastmod>2017-01-12T04:31:57.000Z</lastmod>
@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>http://lizhangqu.github.io/tags/index.html</loc>
+    <loc>http://lizhangqu.github.io/about/index.html</loc>
     
     <lastmod>2017-01-12T04:31:57.000Z</lastmod>
     

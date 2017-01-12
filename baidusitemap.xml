@@ -3,18 +3,27 @@
 
 
     
+    
   <url>
     <loc>http://lizhangqu.github.io/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2017-01-12T14:04:18.000Z</lastmod>
+    <lastmod>2017-01-12T14:25:24.000Z</lastmod>
     <data>
         <display>
         <title>Gradle 函数复用的一点实践</title>
         <pubTime>2017-01-12T09:05:29.000Z</pubTime>
         
-        <tag>Gradle Android</tag>
+        <tag>Gradle</tag>
+         
+        <tag>Android</tag>
          
          
            
+             
+              <breadCrumb title="Android" url="http://lizhangqu.github.io/categories/Android/"/>
+          
+             
+              <breadCrumb title="Gradle" url="http://lizhangqu.github.io/categories/Android/Gradle/"/>
+          
         </display>
     </data>
     </url>
@@ -35,7 +44,6 @@
     </data>
     </url>
 
-    
     
     
     
