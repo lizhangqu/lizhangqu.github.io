@@ -212,6 +212,7 @@ links_title: Links
 links:
   区长的CSDN: http://blog.csdn.net/sbsujjbcy
   geminiwen: https://geminiwen.xyz/
+  camnter: https://www.camnter.com/
 
 
 # ---------------------------------------------------------------
@@ -287,9 +288,11 @@ baidu_analytics: b5e95713d9398479a8df5c83e0159382
 
 # Duoshuo ShortName
 #duoshuo_shortname:
-duoshuo_shortname: lizhangqu
+#duoshuo_shortname: lizhangqu
 # Disqus
 #disqus_shortname:
+disqus_shortname: fucknmb-com
+
 
 # Hypercomments
 #hypercomments_id:
@@ -313,8 +316,8 @@ duoshuo_shortname: lizhangqu
 # Warning: JiaThis does not support https.
 #add_this_id:
 
-#jiathis: true
-duoshuo_share: true
+jiathis: true
+#duoshuo_share: true
 # Share
 #duoshuo_share: true
 
