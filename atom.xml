@@ -4,9 +4,9 @@
   <subtitle>业精于勤,荒于嬉; 行成于思,毁于随</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://lizhangqu.github.io/"/>
+  <link href="https://fucknmb.com/"/>
   <updated>2017-01-12T15:13:57.000Z</updated>
-  <id>http://lizhangqu.github.io/</id>
+  <id>https://fucknmb.com/</id>
   
   <author>
     <name>区长</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Gradle 函数复用的一点实践</title>
-    <link href="http://lizhangqu.github.io/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/"/>
-    <id>http://lizhangqu.github.io/2017/01/12/Gradle函数复用的一点实践/</id>
+    <link href="https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/"/>
+    <id>https://fucknmb.com/2017/01/12/Gradle函数复用的一点实践/</id>
     <published>2017-01-12T09:05:29.000Z</published>
     <updated>2017-01-12T15:13:57.000Z</updated>
     
@@ -30,19 +30,19 @@
     
     </summary>
     
-      <category term="Gradle" scheme="http://lizhangqu.github.io/categories/Gradle/"/>
+      <category term="Gradle" scheme="https://fucknmb.com/categories/Gradle/"/>
     
     
-      <category term="Android" scheme="http://lizhangqu.github.io/tags/Android/"/>
+      <category term="Android" scheme="https://fucknmb.com/tags/Android/"/>
     
-      <category term="Gradle" scheme="http://lizhangqu.github.io/tags/Gradle/"/>
+      <category term="Gradle" scheme="https://fucknmb.com/tags/Gradle/"/>
     
   </entry>
   
   <entry>
     <title>Hello 区长</title>
-    <link href="http://lizhangqu.github.io/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/"/>
-    <id>http://lizhangqu.github.io/2017/01/12/Hello-区长/</id>
+    <link href="https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/"/>
+    <id>https://fucknmb.com/2017/01/12/Hello-区长/</id>
     <published>2017-01-12T03:48:30.000Z</published>
     <updated>2017-01-12T04:31:57.000Z</updated>
     
