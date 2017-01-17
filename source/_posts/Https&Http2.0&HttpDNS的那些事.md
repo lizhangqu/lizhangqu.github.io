@@ -1,11 +1,11 @@
-title: Https与HttpDNS的那些事
+title: Https&Http2.0&HttpDNS的那些事
 date: 2017-01-17 15:34:58
 categories: [Android]
 tags: [Android, Http/2.0, HttpDNS, OkHttp]
 
 ---
 
->仅以本文备忘2016年网络优化过程中留下的坑，本文所讨论的范围全部基于OkHttp此开源库，版本号为3.2.0
+>仅以本文备忘2016年网络优化过程中遇到的问题，本文所讨论的内容全部基于OkHttp此开源库，版本号为3.2.0
 
 
  ### 关于Https
@@ -18,7 +18,8 @@ tags: [Android, Http/2.0, HttpDNS, OkHttp]
  - 服务端通过私钥获取随机数信息。
  - 双方根据以上交互的信息生成session ticket，用作该连接后续数据传输的加密密钥。
 
-上述过程中，第3步客户端需要验证服务端下发的证书，验证过程有以下两个要点：
+<!-- more -->
+上述过程中，第3步中客户端需要验证服务端下发的证书，验证过程有以下两个要点：
 
  - 客户端用本地保存的根证书解开证书链，确认服务端下发的证书是由可信任的机构颁发的。
  - 客户端需要检查证书的domain域和扩展域，看是否包含本次请求的host。
@@ -28,6 +29,15 @@ tags: [Android, Http/2.0, HttpDNS, OkHttp]
  ### 关于Http/2.0
 
   - [HTTP/2 资料汇总](https://imququ.com/post/http2-resource.html)
+
+
+ ### 关于HttpDNS
+
+HttpDNS是使用HTTP协议向DNS服务器的80端口进行请求，代替传统的DNS协议向DNS服务器的53端口进行请求。也就是使用Http协议去进行dns解析请求，将服务器返回的解析结果，即域名对应的服务器ip获得，直接向该ip发起对应的api服务请求，代替使用域名。
+
+HttpDNS主要解决两个问题：
+ - 运营商域名劫持
+ - DNS解析0RT
 
 
  ### OkHttp对Http/2.0的支持
@@ -47,12 +57,12 @@ NPN 的协商结果是在 Change Cipher Spec 之后加密发送给服务端；�
 >如果要检测服务器是否支持ALPN或者NPN，可以使用此网站进行检测 [https://www.ssllabs.com/ssltest/analyze.html](https://www.ssllabs.com/ssltest/analyze.html)
 
 检测效果如下:
-![alpn_npn_detect.jpeg](alpn_npn_detect.jpeg)
+![alpn_npn_detect.jpeg](./alpn_npn_detect.jpeg)
 
 也可以直接使用 [https://tools.keycdn.com/http2-test](https://tools.keycdn.com/http2-test) 检测是否支持Http2.0，但是这个检测只会当ALPN支持的情况下才会认为支持Http2.0
 
 此时的检测效果如下:
-![http2_detect.jpeg](http2_detect.jpeg)
+![http2_detect.jpeg](./http2_detect.jpeg)
 
 出于以上两个原因，这时候Http/2.0就无法发挥作用了，因此，我们有必要将OkHttp这部分代码还原，于是对OkHttp进行了定制，定制方式很简单，根据对应的提交记录，把移除的代码进行还原即可。
 
@@ -476,11 +486,11 @@ public final class Address {
   }
 ```
 
-当然，这个问题还有另一个解决方式，就是通过OkHttp的Dns接口实现HttpDns，于是整个世界平静了，为什么这么说呢，见下文。
+当然，这个问题还有另一个解决方式，**就是通过OkHttp的Dns接口实现HttpDns，于是整个世界平静了**，为什么这么说呢，见下文。
 
 ### Http/2.0 && SPDY/3.1 与HttpDNS
 
-当你天真的以为这样解决了问题之后，那你就打错特错了，这就是上面说的，直接通过OkHttp的Dns接口实现HttpDns一了百了的原因了。在SPDY和Http2.0中，请求头中的host已不再是Http1.1时代的host了，通过查看协议文档 [https://tools.ietf.org/html/draft-ietf-httpbis-http2-09#section-8.1.3](https://tools.ietf.org/html/draft-ietf-httpbis-http2-09#section-8.1.3)可以看到在Http2.0中使用:authority请求头代替Http1.1中的host
+当你天真的以为这样解决了问题之后，那你就大错特错了，这就是上面说的，直接通过OkHttp的Dns接口实现HttpDns一了百了的原因了。在SPDY和Http2.0中，请求头中的host已不再是Http1.1时代的host了，通过查看协议文档 [https://tools.ietf.org/html/draft-ietf-httpbis-http2-09#section-8.1.3](https://tools.ietf.org/html/draft-ietf-httpbis-http2-09#section-8.1.3)可以看到在Http2.0中使用:authority请求头代替Http1.1中的host
 
 ![http2_docs.png](http2_docs.png)
 
@@ -597,9 +607,9 @@ public static List<Header> http2HeadersList(Request request) {
 
  这个问题会导致服务器将所有请求进行硬盘buffer处理，nginx会报以下警告
 
- ```
- 2016/12/02 16:42:58 [warn] 20479#0: *77176 a client request body is buffered to a temporary file /home/www/tengine/data/client_body/0033902790, client: *.*.*.*, server: fucknmb.com, request: "POST /apiName/apiVersion HTTP/2.0", host: "fucknmb.com", referrer: "https://fucknmb.com"
- ```
+
+>2016/12/02 16:42:58 [warn] 20479#0: *77176 a client request body is buffered to a temporary file /home/www/tengine/data/client_body/0033902790, client: *.*.*.*, server: fucknmb.com, request: "POST /apiName/apiVersion HTTP/2.0", host: "fucknmb.com", referrer: "https://fucknmb.com"
+
 
  这个问题，我并没有找到最终的原因，就是这么神奇，但是我找到了解决方式。
 
@@ -637,4 +647,8 @@ public static List<Header> http2HeadersList(Request request) {
  RequestBody.create( MediaType.parse("application/octet-stream; charset=utf-8"), bytes);
  ```
 
+ ### 参考文章
 
+ - [HTTPS（含SNI）业务场景“IP直连”方案说明](https://help.aliyun.com/document_detail/30143.html)
+ - [Http2.0协议文档](https://tools.ietf.org/html/draft-ietf-httpbis-http2-09)
+ - [为什么我们应该尽快支持 ALPN？](https://imququ.com/post/enable-alpn-asap.html)
