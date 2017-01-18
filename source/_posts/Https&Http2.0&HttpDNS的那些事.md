@@ -650,7 +650,7 @@ public static List<Header> http2HeadersList(Request request) {
 
  ### 其他没提到的坑
 
- - WebView中的HttpDns场景，参考[WebView业务场景“IP直连”方案说明](https://help.aliyun.com/document_detail/48972.html?spm=5176.7947101.220063.8.3exzV5)，由于WebView拦截请求在Andriod 5.0以上和Android 5.0以下略有区别，建议WebView中只处理静态资源的HttpDns。
+ - WebView中的HttpDns场景，参考[WebView业务场景“IP直连”方案说明](https://help.aliyun.com/document_detail/48972.html?spm=5176.7947101.220063.8.3exzV5)，由于WebView拦截请求在Andriod 5.0以上和Android 5.0以下略有区别，建议WebView中只处理静态资源的HttpDns，并且建议在Android 5.0以下不要进行拦截。
  - Cookie的场景，参考[HTTPDNS域名解析场景下如何使用Cookie？](https://help.aliyun.com/document_detail/47317.html?spm=5176.doc30144.6.584.cP9Fbg)
  - 存在代理的情况下的场景，代理的情况下，由于域名被替换成了ip，或多或少会存在问题，建议检测到代理的情况下，直接关闭HttpDns服务。
 
