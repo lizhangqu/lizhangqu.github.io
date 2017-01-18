@@ -29,11 +29,12 @@ tags: [Android, Http/2.0, HttpDNS, OkHttp]
  ### 关于Http/2.0
 
   - [HTTP/2 资料汇总](https://imququ.com/post/http2-resource.html)
+  - [HTTP 2.0的那些事](http://mrpeak.cn/blog/http2/)
 
 
  ### 关于HttpDNS
 
-HttpDNS是使用HTTP协议向DNS服务器的80端口进行请求，代替传统的DNS协议向DNS服务器的53端口进行请求。也就是使用Http协议去进行dns解析请求，将服务器返回的解析结果，即域名对应的服务器ip获得，直接向该ip发起对应的api服务请求，代替使用域名。
+HttpDNS是使用HTTP协议向DNS服务器的80端口进行请求，代替传统的DNS协议向DNS服务器的53端口进行请求。也就是使用Http协议去进行dns解析请求，将服务器返回的解析结果DnsList，即域名对应的服务器ip获得，直接向该ip发起对应的api服务请求，代替使用域名。
 
 HttpDNS主要解决两个问题：
  - 运营商域名劫持
@@ -248,11 +249,11 @@ logger.log("<-- " +"responseProtocol:"+responseProtocol);
 
 ### OkHttp使用HttpDNS的两种方式
  
-  - [Android使用OkHttp支持HttpDNS](http://blog.csdn.net/sbsujjbcy/article/details/50532797)
-  - [Android OkHttp实现HttpDns的最佳实践（非拦截器）](http://blog.csdn.net/sbsujjbcy/article/details/51612832)
+  - [Android使用OkHttp支持HttpDNS（拦截器）](http://blog.csdn.net/sbsujjbcy/article/details/50532797)
+  - [Android OkHttp实现HttpDns的最佳实践（非拦截器,Dns接口）](http://blog.csdn.net/sbsujjbcy/article/details/51612832)
 
 
-这两种方式各有优缺点，使用Dns接口方式过于底层，异常不容易控制，如果要十分精确的控制异常，建议使用拦截器方式，而使用拦截器方式主要需要进行两步操作
+这两种方式各有优缺点，使用Dns接口方式过于底层，异常不容易控制，上层无感知，如果要十分精确的控制异常，建议使用拦截器方式，而使用拦截器方式主要需要进行两步操作
  
  - 对url中的host进行替换，将域名替换为ip
  - 添加header请求头，值为替换前的域名
@@ -346,7 +347,7 @@ private void connectTls(int readTimeout, int writeTimeout,
 
 目前，大多数操作系统和浏览器都已经很好地支持SNI扩展，OpenSSL 0.9.8也已经内置这一功能。
 
-上述过程中，当客户端使用HttpDNS时，请求URL中的Host会被替换成HttpPDNS解析出来的IP，导致服务器获取到的域名为解析后的IP，无法找到匹配的证书，只能返回默认的证书或者不返回，所以会出现SSL/TLS握手不成功的错误。
+上述过程中，当客户端使用HttpDNS时，请求URL中的Host会被替换成HttpDNS解析出来的IP，导致服务器获取到的域名为解析后的IP，无法找到匹配的证书，只能返回默认的证书或者不返回，所以会出现SSL/TLS握手不成功的错误。
 
 最常见的一个场景就是：
 >比如当你需要通过https访问CDN资源时，CDN的站点往往服务了很多的域名，所以需要通过SNI指定具体的域名证书进行通信。
@@ -409,7 +410,7 @@ public final class Address {
   }
 ```
 
-回到okhttp3.internal.io.RealConnection中的connectTls方法中，将证书验证，设置SNI的传入的参数进行修改，修改原则为：当请求头中的host存在时，使用请求头中的host，当请求头中的host不存在时，使用url中的host。
+回到okhttp3.internal.io.RealConnection中的connectTls方法中，将证书验证，设置SNI的传入的参数进行修改，修改原则为：当请求头中的host存在时，使用请求头中的host，当请求头中的host不存在时，使用url中的host，但是连接时使用的依然是url中的host，也就是存在httpdns的时候，使用的是ip直连。
 
 ```
  private void connectTls(int readTimeout, int writeTimeout,
@@ -494,7 +495,7 @@ public final class Address {
 
 ![http2_docs.png](http2_docs.png)
 
-**题外话，在Http2.0中，所有请求头全部变成小写，大小的请求头是不符合规范的。**
+**题外话，在Http2.0中，所有请求头全部变成小写，大写的请求头是不符合规范的。**
 
 这个问题导致的直接结果就是服务器端拿到的host是ip，而不是域名，如果服务器对host进行校验，那么可能就会出问题。
 
@@ -611,9 +612,9 @@ public static List<Header> http2HeadersList(Request request) {
 >2016/12/02 16:42:58 [warn] 20479#0: *77176 a client request body is buffered to a temporary file /home/www/tengine/data/client_body/0033902790, client: *.*.*.*, server: fucknmb.com, request: "POST /apiName/apiVersion HTTP/2.0", host: "fucknmb.com", referrer: "https://fucknmb.com"
 
 
- 这个问题，我并没有找到最终的原因，就是这么神奇，但是我找到了解决方式。
+ 这个问题，我并没有找到最终的原因，但是我找到了解决方式，就是这么神奇。
 
- 当使用application/octet-stream类型时，OkHttp会追加请求头Transfer-Encoding: chunked请求头，而此时如果请求头里有Content-Length，则问题不会存在，错就错在上面的自定义RequestBody，没有重写contentLength()方法，如果没有重写，OkHttp会默认返回-1,在返回-1的时候，是不会追加Content-Length这个请求头的，因此这个问题的原因在与使用了application/octet-stream类型，但没有Content-Length，而且这个问题只有Http2.0下会有。Http/1.1和SPDY/3.1都不会有，初步怀疑和Http/2.0的帧传输有关，那么解决方法也很简单，重写contentLength()方法即可。如下
+ 当使用application/octet-stream类型时，OkHttp会追加请求头Transfer-Encoding: chunked请求头，而此时如果请求头里有Content-Length，则问题不会存在，错就错在上面的自定义RequestBody，没有重写contentLength()方法，如果没有重写，OkHttp会默认返回-1，在返回-1的时候，是不会追加Content-Length这个请求头的，因此这个问题的原因在与使用了application/octet-stream类型，但没有Content-Length，而且这个问题只有Http2.0下会有。Http/1.1和SPDY/3.1都不会有，初步怀疑和Http/2.0的帧传输有关，那么解决方法也很简单，重写contentLength()方法即可。如下
 
  ```
  class ByteRequestBody extends RequestBody {
@@ -641,10 +642,43 @@ public static List<Header> http2HeadersList(Request request) {
     }
  ```
 
- 当然，如果没有必要重写的情况下，建议用以下方式创建RequestBody，避免漏掉需要重写的方法
+ 当然，如果没有必要使用自定义RequestBody的情况下，建议用以下方式创建RequestBody，避免漏掉需要重写的方法
 
  ```
  RequestBody.create( MediaType.parse("application/octet-stream; charset=utf-8"), bytes);
+ ```
+
+ ### 其他没提到的坑
+
+ - WebView中的HttpDns场景，参考[WebView业务场景“IP直连”方案说明](https://help.aliyun.com/document_detail/48972.html?spm=5176.7947101.220063.8.3exzV5)，由于WebView拦截请求在Andriod 5.0以上和Android 5.0以下略有区别，建议WebView中只处理静态资源的HttpDns。
+ - Cookie的场景，参考[HTTPDNS域名解析场景下如何使用Cookie？](https://help.aliyun.com/document_detail/47317.html?spm=5176.doc30144.6.584.cP9Fbg)
+ - 存在代理的情况下的场景，代理的情况下，由于域名被替换成了ip，或多或少会存在问题，建议检测到代理的情况下，直接关闭HttpDns服务。
+
+
+
+ 附上Android中检测是否存在代理的核心代码
+
+ ```
+  public static boolean detectIfProxyExist(Context ctx) {
+        boolean IS_ICS_OR_LATER = Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH;
+        String proxyHost;
+        int proxyPort;
+        try {
+            if (IS_ICS_OR_LATER) {
+                proxyHost = System.getProperty("http.proxyHost");
+                String port = System.getProperty("http.proxyPort");
+                proxyPort = Integer.parseInt(port != null ? port : "-1");
+            } else {
+                proxyHost = android.net.Proxy.getHost(ctx);
+                proxyPort = android.net.Proxy.getPort(ctx);
+
+            }
+            return proxyHost != null && proxyPort != -1;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
  ```
 
  ### 参考文章
