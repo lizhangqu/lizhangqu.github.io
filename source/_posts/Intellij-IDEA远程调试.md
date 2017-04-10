@@ -14,7 +14,7 @@ tags: [IDEA, 远程调试]
 
 Edit Configurations -> +号 -> Remote -> 填写远程Host和端口号
 
-![remote.jpeg](remote.jpeg)
+![configuration_remote.jpeg](configuration_remote.jpeg)
 
 
 其中Host填写的是远程服务器的IP地址，8082就是远程调试的端口
@@ -29,9 +29,9 @@ CATALINA_OPTS="${CATALINA_OPTS} -agentlib:jdwp=transport=dt_socket,server=y,addr
 
 ### 启动调试
 
-![debug.jpeg](debug.jpeg)
+![start_debug.jpeg](start_debug.jpeg)
 
-![attach.jpeg](attach.jpeg)
+![attach_debug.jpeg](attach_debug.jpeg)
 
 看到Connected to target VM等信息输出就表示连接到了远程服务器，之后就是正常的调试了
 
@@ -41,4 +41,4 @@ CATALINA_OPTS="${CATALINA_OPTS} -agentlib:jdwp=transport=dt_socket,server=y,addr
 
 
 弹出确认框时不要选择Terminate the process after disconnect,然后点击disconnect断开连接，重要的事再说一遍，不要选择断开连接后终止程序
-![confirm.jpeg](confirm.jpeg)
+![close_confirm.jpeg](close_confirm.jpeg)
