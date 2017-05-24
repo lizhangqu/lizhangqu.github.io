@@ -78,6 +78,46 @@ make -j4
 make install
 ```
 
+configure完成后检查输出结果是否enable ssl, enable https, enable http2.0
+
+```
+Configured to build curl/libcurl:
+
+  curl version:     7.53.1
+  Host setup:       arm-unknown-linux-androideabi
+  Install prefix:   /Users/lizhangqu/Desktop/android/toolchain/sysroot/usr/local
+  Compiler:         /Users/lizhangqu/Desktop/android/toolchain/bin/arm-linux-androideabi-gcc
+  SSL support:      enabled (OpenSSL)
+  SSH support:      no      (--with-libssh2)
+  zlib support:     enabled
+  GSS-API support:  no      (--with-gssapi)
+  TLS-SRP support:  enabled
+  resolver:         POSIX threaded
+  IPv6 support:     enabled
+  Unix sockets support: enabled
+  IDN support:      no      (--with-{libidn2,winidn})
+  Build libcurl:    Shared=no, Static=yes
+  Built-in manual:  no      (--enable-manual)
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   no
+  SSPI support:     no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     no
+  ca fallback:      no
+  LDAP support:     no      (--enable-ldap / --with-ldap-lib / --with-lber-lib)
+  LDAPS support:    no      (--enable-ldaps)
+  RTSP support:     no      (--enable-rtsp)
+  RTMP support:     no      (--with-librtmp)
+  metalink support: no      (--with-libmetalink)
+  PSL support:      no      (libpsl not found)
+  HTTP2 support:    enabled (nghttp2)
+  Protocols:        FILE FTP FTPS HTTP HTTPS TFTP
+
+  SONAME bump:     yes - WARNING: this library will be built with the SONAME
+                   number bumped due to (a detected) ABI breakage.
+                   See lib/README.curl_off_t for details on this.
+```
+
 
 armeabi-v7a
 
