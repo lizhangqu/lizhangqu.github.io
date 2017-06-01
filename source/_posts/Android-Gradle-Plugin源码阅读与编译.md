@@ -152,6 +152,7 @@ buildscript {
 
 需要将其指定到本地的部署产物所在repo
 
+```
 buildscript {
     repositories {
         maven { url 'path/to/gradle_2.3.0/out/repo' }
@@ -160,6 +161,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.3.0'
     }
 }
+```
 
 ### 对比总结
 
