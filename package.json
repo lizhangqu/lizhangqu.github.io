@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.7"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -24,6 +24,5 @@
     "hexo-filter-auto-spacing": "^0.2.1",
     "hexo-generator-searchdb": "^1.0.3",
     "hexo-all-minifier": "^0.0.14"
-    
   }
 }
