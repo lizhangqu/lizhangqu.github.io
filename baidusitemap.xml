@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
+    <lastmod>2017-06-02T16:58:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>当 Android 开发者遇见 TensorFlow</title>
+        <pubTime>2017-06-02T12:14:52.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>机器学习，Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-06-01T05:50:03.000Z</lastmod>
     <data>
@@ -28,7 +50,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
@@ -166,6 +187,28 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
+    <lastmod>2017-06-01T05:47:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>iOS-Empty-Application-Template-For-XCode8</title>
+        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
+        
+        <tag>iOS</tag>
+         
+        <tag>XCode8</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
     <lastmod>2017-06-01T05:47:57.000Z</lastmod>
     <data>
@@ -176,30 +219,6 @@
         <tag>NDK</tag>
          
         <tag>Debug</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-06-01T05:47:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>libnghttp2 NDK 交叉编译</title>
-        <pubTime>2017-05-24T09:25:39.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>nghttp2</tag>
          
          
            
@@ -235,6 +254,7 @@
     </url>
 
     
+    
   <url>
     <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
     <lastmod>2017-06-01T05:47:57.000Z</lastmod>
@@ -262,21 +282,23 @@
     
     
   <url>
-    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
+    <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-06-01T05:47:57.000Z</lastmod>
     <data>
         <display>
-        <title>iOS-Empty-Application-Template-For-XCode8</title>
-        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
+        <title>libnghttp2 NDK 交叉编译</title>
+        <pubTime>2017-05-24T09:25:39.000Z</pubTime>
         
-        <tag>iOS</tag>
+        <tag>NDK</tag>
          
-        <tag>XCode8</tag>
+        <tag>交叉编译</tag>
+         
+        <tag>nghttp2</tag>
          
          
            
              
-              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
           
         </display>
     </data>
