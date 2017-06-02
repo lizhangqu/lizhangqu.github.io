@@ -39,7 +39,7 @@ dependencies {
 }
 ```
 
-为了运行java程序，应用application插件，并制定mainClassName，对应的类在后文创建
+为了运行java程序，应用application插件，并指定mainClassName，对应的类在后文创建
 
 ```
 apply plugin: 'application'
