@@ -68,6 +68,13 @@ make -j4
 make install
 ```
 
+卸载
+
+```
+make uninstall
+```
+
+
 armeabi-v7a
 
 ```

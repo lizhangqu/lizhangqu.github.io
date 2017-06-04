@@ -51,3 +51,9 @@ autoreconf -i
 make
 make install
 ```
+
+卸载
+
+```
+make uninstall
+```

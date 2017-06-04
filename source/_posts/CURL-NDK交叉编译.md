@@ -56,6 +56,7 @@ export LDFLAGS="${ARCH_LINK}"
 
 ```
 cd curl-7.53.1
+autoreconf -i
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
        --host=arm-linux-androideabi \
@@ -77,6 +78,13 @@ cd curl-7.53.1
 make -j4
 make install
 ```
+
+卸载
+
+```
+make uninstall
+```
+
 
 configure完成后检查输出结果是否enable ssl, enable https, enable http2.0
 
