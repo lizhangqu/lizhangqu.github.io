@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fucknmb.com/"/>
-  <updated>2017-06-02T17:06:28.000Z</updated>
+  <updated>2017-06-04T04:26:23.000Z</updated>
   <id>https://fucknmb.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>libuv NDK 交叉编译</title>
+    <link href="https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/"/>
+    <id>https://fucknmb.com/2017/06/04/libuv-NDK交叉编译/</id>
+    <published>2017-06-04T04:23:54.000Z</published>
+    <updated>2017-06-04T04:26:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x79FB;&#x690D;libuv&#x5230;android</p><a id="more"></a><p>&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8FDB;&#x5165;</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">mkdir</span> android</div><div class="line"><span class="built_in">cd</span> android</div></pre></td></tr></table></figure><p>&#x751F;&#x6210;&#x4EA4;&#x53C9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#x94FE;</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ANDROID_NDK</span>/build/tools/make-standalone-toolchain.sh <span class="attribute">--arch</span>=arm <span class="attribute">--install-dir</span>=./toolchain</div></pre></td></tr></table></figure><p>clone&#x6E90;&#x7801;</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">clone</span> <span class="title">git</span>@github.com:libuv/libuv.git</div></pre></td></tr></table></figure><p>&#x5BFC;&#x51FA;&#x73AF;&#x5883;&#x53D8;&#x91CF;(armeabi)</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="builtin-name">export</span> <span class="attribute">ANDROID_HOME</span>=`pwd`</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">TOOLCHAIN</span>=<span class="variable">$ANDROID_HOME</span>/toolchain</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="variable">$TOOLCHAIN</span>/bin:$PATH</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">TOOL</span>=arm-linux-androideabi</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">CC</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-gcc</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">CXX</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-g++</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">LINK</span>=<span class="variable">${CXX}</span></div><div class="line"><span class="builtin-name">export</span> <span class="attribute">LD</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-ld</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">AR</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-ar</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">RANLIB</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-ranlib</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">STRIP</span>=<span class="variable">$TOOLCHAIN</span>/bin/${TOOL}-strip</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">PLATFORM</span>=android</div></pre></td></tr></table></figure><p>&#x7F16;&#x8BD1;&#x5E76;&#x5B89;&#x88C5;<br></p><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">cd libuv</div><div class="line">./autogen.sh</div><div class="line">autoreconf -i</div><div class="line">./configure --prefix=$TOOLCHAIN/sysroot/usr/local \</div><div class="line">       -<span class="ruby">-with-sysroot=$TOOLCHAIN/sysroot \</span></div><div class="line">       -<span class="ruby">-host=arm-linux-androideabi \</span></div><div class="line">       -<span class="ruby">-enable-static \</span></div><div class="line">       -<span class="ruby">-disable-shared</span></div><div class="line">make -j4</div><div class="line">make install</div></pre></td></tr></table></figure><p></p><p>armeabi-v7a</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ANDROID_NDK</span>/build/tools/make-standalone-toolchain.sh <span class="attribute">--arch</span>=arm <span class="attribute">--install-dir</span>=./toolchain</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">TOOL</span>=arm-linux-androideabi</div><div class="line">./configure <span class="attribute">--prefix</span>=<span class="variable">$TOOLCHAIN</span>/sysroot/usr/local \</div><div class="line">       <span class="attribute">--with-sysroot</span>=<span class="variable">$TOOLCHAIN</span>/sysroot \</div><div class="line">       <span class="attribute">--host</span>=arm-linux-androideabi \</div><div class="line">       --enable-static \</div><div class="line">       --disable-shared</div></pre></td></tr></table></figure><p>x86</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ANDROID_NDK</span>/build/tools/make-standalone-toolchain.sh <span class="attribute">--arch</span>=x86 <span class="attribute">--install-dir</span>=./toolchain</div><div class="line"><span class="builtin-name">export</span> <span class="attribute">TOOL</span>=x86-linux-android</div><div class="line"></div><div class="line">./configure <span class="attribute">--prefix</span>=<span class="variable">$TOOLCHAIN</span>/sysroot/usr/local \</div><div class="line">       <span class="attribute">--with-sysroot</span>=<span class="variable">$TOOLCHAIN</span>/sysroot \</div><div class="line">       <span class="attribute">--host</span>=x86-linux-androideabi \</div><div class="line">       --enable-static \</div><div class="line">       --disable-shared</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x79FB;&amp;#x690D;libuv&amp;#x5230;android&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="NDK" scheme="https://fucknmb.com/categories/NDK/"/>
+    
+    
+      <category term="NDK" scheme="https://fucknmb.com/tags/NDK/"/>
+    
+      <category term="交叉编译" scheme="https://fucknmb.com/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/"/>
+    
+      <category term="libuv" scheme="https://fucknmb.com/tags/libuv/"/>
+    
+  </entry>
   
   <entry>
     <title>当 Android 开发者遇见 TensorFlow</title>
