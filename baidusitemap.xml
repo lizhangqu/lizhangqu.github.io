@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/06/22/NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F/</loc>
-    <lastmod>2017-06-22T13:38:39.000Z</lastmod>
+    <lastmod>2017-06-22T13:48:55.000Z</lastmod>
     <data>
         <display>
         <title>NDK 交叉编译常用变量</title>
@@ -26,23 +26,25 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
         <display>
-        <title>libuv NDK 交叉编译</title>
-        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
+        <title>Android Gradle Plugin 源码阅读与编译</title>
+        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
         
-        <tag>NDK</tag>
+        <tag>Android</tag>
          
-        <tag>交叉编译</tag>
+        <tag>Gradle</tag>
          
-        <tag>libuv</tag>
+        <tag>Instant Run</tag>
+         
+        <tag>AOSP</tag>
          
          
            
              
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
         </display>
     </data>
@@ -60,6 +62,32 @@
         <tag>NDK</tag>
          
         <tag>Debug</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 在 NDK 层使用 OpenSSL 进行 RSA 加密</title>
+        <pubTime>2017-04-09T09:23:44.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>OpenSSL</tag>
+         
+        <tag>RSA</tag>
+         
+        <tag>Base64</tag>
          
          
            
@@ -118,21 +146,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
-    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 区长</title>
-        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
@@ -148,6 +161,47 @@
            
              
               <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
+    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 区长</title>
+        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
+    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Https&Http2.0&HttpDNS 的那些事</title>
+        <pubTime>2017-01-17T07:34:58.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Http/2.0</tag>
+         
+        <tag>HttpDNS</tag>
+         
+        <tag>OkHttp</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
@@ -177,32 +231,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android Gradle Plugin 源码阅读与编译</title>
-        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Gradle</tag>
-         
-        <tag>Instant Run</tag>
-         
-        <tag>AOSP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
@@ -218,6 +246,28 @@
            
              
               <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android NDK 内存泄露检测</title>
+        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>Android，内存泄露检测</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
           
         </display>
     </data>
@@ -249,16 +299,18 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
         <display>
-        <title>Android NDK 内存泄露检测</title>
-        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
+        <title>libuv NDK 交叉编译</title>
+        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
         
         <tag>NDK</tag>
          
-        <tag>Android，内存泄露检测</tag>
+        <tag>交叉编译</tag>
+         
+        <tag>libuv</tag>
          
          
            
@@ -295,28 +347,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
-    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>编译时注解 5 步走</title>
-        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
-        
-        <tag>Annotation</tag>
-         
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
@@ -339,51 +369,21 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
+    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
     <lastmod>2017-06-22T13:20:15.000Z</lastmod>
     <data>
         <display>
-        <title>Android 在 NDK 层使用 OpenSSL 进行 RSA 加密</title>
-        <pubTime>2017-04-09T09:23:44.000Z</pubTime>
+        <title>编译时注解 5 步走</title>
+        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
         
-        <tag>NDK</tag>
+        <tag>Annotation</tag>
          
-        <tag>OpenSSL</tag>
-         
-        <tag>RSA</tag>
-         
-        <tag>Base64</tag>
+        <tag>Java</tag>
          
          
            
              
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
-    <lastmod>2017-06-22T13:20:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>Https&Http2.0&HttpDNS 的那些事</title>
-        <pubTime>2017-01-17T07:34:58.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Http/2.0</tag>
-         
-        <tag>HttpDNS</tag>
-         
-        <tag>OkHttp</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
           
         </display>
     </data>
