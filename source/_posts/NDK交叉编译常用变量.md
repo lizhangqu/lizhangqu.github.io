@@ -83,12 +83,12 @@ export LIBS=
 
 autoreconf -i
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
-			--with-sysroot=$TOOLCHAIN/sysroot
-#			--host=$TOOL
-#			--enable_shared
-#			--enable_static
-#			--disable_shared
-#			--disable_static
+			--with-sysroot=$TOOLCHAIN/sysroot \
+#			--host=$TOOL \
+#			--enable-shared \ 
+#			--enable-static \
+#			--disable-shared \
+#			--disable-static
 
 make -j4
 make install
