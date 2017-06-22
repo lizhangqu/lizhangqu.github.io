@@ -37,44 +37,40 @@ tags: [NDK, 交叉编译]
 
 # 各cpu架构的参数见下方
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=arm --install-dir=./toolchain
-TOOL=arm-linux-androideabi
 
-ANDROID_HOME=`pwd`
-TOOLCHAIN=$ANDROID_HOME/toolchain
+export TOOL=arm-linux-androideabi
+export ANDROID_HOME=`pwd`
+export TOOLCHAIN=$ANDROID_HOME/toolchain
+export PATH=$TOOLCHAIN/bin:$PATH
+export PKG_CONFIG_LIBDIR=$TOOLCHAIN/lib/pkgconfig
+export CC=$TOOLCHAIN/bin/$TOOL-gcc
+export CXX=$TOOLCHAIN/bin/$TOOL-g++
+export LINK=$CXX
+export LD=$TOOLCHAIN/bin/$TOOL-ld
+export AR=$TOOLCHAIN/bin/$TOOL-ar
+export AS=$TOOLCHAIN/bin/$TOOL-as
+export NM=$TOOLCHAIN/bin/$TOOL-nm
+export RANLIB=$TOOLCHAIN/bin/$TOOL-ranlib
+export STRIP=$TOOLCHAIN/bin/$TOOL-strip
+export OBJDUMP=$TOOLCHAIN/bin/$TOOL-objdump
+export OBJCOPE=$TOOLCHAIN/bin/$TOOL-objcopy
+export ADDR2LINE=$TOOLCHAIN/bin/$TOOL-addr2line
+export ELFEDIT=$TOOLCHAIN/bin/$TOOL-elfedit
+export READELF=$TOOLCHAIN/bin/$TOOL-readelf
+export SIZE=$TOOLCHAIN/bin/$TOOL-size
+export STRINGS=$TOOLCHAIN/bin/$TOOL-strings
 
-PKG_CONFIG_LIBDIR=$TOOLCHAIN/lib/pkgconfig
-CC=$TOOLCHAIN/bin/$TOOL-gcc
-CXX=$TOOLCHAIN/bin/$TOOL-g++
-LINK=$CXX
-LD=$TOOLCHAIN/bin/$TOOL-ld
-AR=$TOOLCHAIN/bin/$TOOL-ar
-AS=$TOOLCHAIN/bin/$TOOL-as
-NM=$TOOLCHAIN/bin/$TOOL-nm
-RANLIB=$TOOLCHAIN/bin/$TOOL-ranlib
-STRIP=$TOOLCHAIN/bin/$TOOL-strip
-OBJDUMP=$TOOLCHAIN/bin/$TOOL-objdump
-OBJCOPE=$TOOLCHAIN/bin/$TOOL-objcopy
-ADDR2LINE=$TOOLCHAIN/bin/$TOOL-addr2line
-ELFEDIT=$TOOLCHAIN/bin/$TOOL-elfedit
-READELF=$TOOLCHAIN/bin/$TOOL-readelf
-SIZE=$TOOLCHAIN/bin/$TOOL-size
-STRINGS=$TOOLCHAIN/bin/$TOOL-strings
-
-
-
-export PKG_CONFIG_LIBDIR CC CXX LINK LD AR AS NM RANLIB STRIP OBJDUMP OBJCOPE ADDR2LINE ELFEDIT READELF SIZE STRINGS
 
 # 各cpu架构的参数见下方
-ARCH_FLAGS="-mthumb"
-ARCH_LINK=
+export ARCH_FLAGS="-mthumb"
+export ARCH_LINK=
 
-CFLAGS="${ARCH_FLAGS} -fpic -ffunction-sections -funwind-tables -fstack-protector -fno-strict-aliasing -finline-limit=64"
-CXXFLAGS="${CFLAGS} -frtti -fexceptions"
-LDFLAGS="${ARCH_LINK}"
-ARFLAGS=
-LIBS=
+export CFLAGS="${ARCH_FLAGS} -fpic -ffunction-sections -funwind-tables -fstack-protector -fno-strict-aliasing -finline-limit=64"
+export CXXFLAGS="${CFLAGS} -frtti -fexceptions"
+export LDFLAGS="${ARCH_LINK}"
+export ARFLAGS=
+export LIBS=
 
-export CFLAGS CXXFLAGS LDFLAGS LIBS
 
 #CFLAGS：表示用于 C 编译器的选项。
 #如指定头文件（.h文件）的路径，如：CFLAGS=-I/usr/include -I/path/include。同样地，安装一个包时会在安装路径下建立一个include目录，当安装过程中出现问题时，试着把以前安装的包的include目录加入到该变量中来。
@@ -88,9 +84,11 @@ export CFLAGS CXXFLAGS LDFLAGS LIBS
 autoreconf -i
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
 			--with-sysroot=$TOOLCHAIN/sysroot
-			--host=$TOOL
-			--enable_shared
-			--enable_static
+#			--host=$TOOL
+#			--enable_shared
+#			--enable_static
+#			--disable_shared
+#			--disable_static
 
 make -j4
 make install
@@ -101,62 +99,62 @@ armeabi
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=arm --install-dir=./toolchain
-TOOL=arm-linux-androideabi
-ARCH_FLAGS="-mthumb"
-ARCH_LINK=
+export TOOL=arm-linux-androideabi
+export ARCH_FLAGS="-mthumb"
+export ARCH_LINK=
 ```
 
 armeabi-v7a
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=arm --install-dir=./toolchain
-TOOL=arm-linux-androideabi
-ARCH_FLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
-ARCH_LINK="-march=armv7-a -Wl,--fix-cortex-a8"
+export TOOL=arm-linux-androideabi
+export ARCH_FLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
+export ARCH_LINK="-march=armv7-a -Wl,--fix-cortex-a8"
 ```
 
 arm64-v8a
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=arm64 --install-dir=./toolchain
-TOOL=aarch64-linux-android
-ARCH_FLAGS=
-ARCH_LINK=
+export TOOL=aarch64-linux-android
+export ARCH_FLAGS=
+export ARCH_LINK=
 ```
 
 x86
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=x86 --install-dir=./toolchain
-TOOL=x86-linux-android
-ARCH_FLAGS="-march=i686 -msse3 -mstackrealign -mfpmath=sse"
-ARCH_LINK=
+export TOOL=x86-linux-android
+export ARCH_FLAGS="-march=i686 -msse3 -mstackrealign -mfpmath=sse"
+export ARCH_LINK=
 ```
 
 x86_64
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=x86_64 --install-dir=./toolchain
-TOOL="x86_64-linux-android"
-ARCH_FLAGS="-march=x86-64 -msse4.2 -mpopcnt -m64 -mtune=intel"
-ARCH_LINK=""
+export TOOL="x86_64-linux-android"
+export ARCH_FLAGS="-march=x86-64 -msse4.2 -mpopcnt -m64 -mtune=intel"
+export ARCH_LINK=""
 ```
 
 mips
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=mips --install-dir=./toolchain
-TOOL=mipsel-linux-android
-ARCH_FLAGS=
-ARCH_LINK=
+export TOOL=mipsel-linux-android
+export ARCH_FLAGS=
+export ARCH_LINK=
 ```
 
 mips64
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=mips64 --install-dir=./toolchain
-TOOL=mips64-linux-android
-ARCH_FLAGS=
-ARCH_LINK=
+export TOOL=mips64-linux-android
+export ARCH_FLAGS=
+export ARCH_LINK=
 ```
 
