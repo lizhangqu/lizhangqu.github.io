@@ -73,7 +73,7 @@ clean及构建目标产物
 --build "../build/android/armeabi-v7a" \
 --target clean
  
-# build rime target
+# build your target
 /Users/lizhangqu/AndroidSDK/cmake/3.6.3155560/bin/cmake \
 --build "../build/android/armeabi-v7a" \
 --target 构建的目标target \
@@ -117,7 +117,7 @@ cmake \
 --target clean
  
  
-# build rime target
+# build your target
 cmake \
 --build "../build/ios" \
 --target 构建的目标target \
