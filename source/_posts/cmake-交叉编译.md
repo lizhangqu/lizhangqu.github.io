@@ -9,14 +9,14 @@ tags: [cmake, Android，ndk]
 
 #### Android交叉编译工具链
 
-- [google官方出的android.toolchain.cmake](https://android.googlesource.com/platform/tools/cmake-utils/+/cmake-master-dev/android.toolchain.cmake)
-- [第三方android-cmake，可以被android.toolchain.cmake兼容](https://github.com/taka-no-me/android-cmake)
+ - [google官方出的android.toolchain.cmake](https://android.googlesource.com/platform/tools/cmake-utils/+/cmake-master-dev/android.toolchain.cmake)
+ - [第三方android-cmake，可以被android.toolchain.cmake兼容](https://github.com/taka-no-me/android-cmake)
 http://gitlab.vdian.net/WD-INPUT/toolchain/
 
 #### iOS交叉编译工具链
 
--[cristeab/ios-cmake，两三年没更新了](https://github.com/cristeab/ios-cmake)
--[leetal/ios-cmake，建议使用这个](https://github.com/leetal/ios-cmake)
+ - [cristeab/ios-cmake，两三年没更新了](https://github.com/cristeab/ios-cmake)
+ - [leetal/ios-cmake，建议使用这个](https://github.com/leetal/ios-cmake)
 
 <!-- more -->
 
