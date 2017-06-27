@@ -18,6 +18,8 @@ http://gitlab.vdian.net/WD-INPUT/toolchain/
 -[cristeab/ios-cmake，两三年没更新了](https://github.com/cristeab/ios-cmake)
 -[leetal/ios-cmake，建议使用这个](https://github.com/leetal/ios-cmake)
 
+<!-- more -->
+
 ### 交叉编译前的准备
 
 clone项目到本地某个位置，android的可以直接使用ndk目录下的cmake，位于ndk/build/cmake/android.toolchain.cmake；iOS可以使用https://github.com/leetal/ios-cmake，将其clone到本地。
