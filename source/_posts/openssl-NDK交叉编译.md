@@ -97,13 +97,13 @@ x86
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=x86 --install-dir=./toolchain
-export TOOL=x86-linux-android
+export TOOL=i686-linux-android
 export ARCH_FLAGS="-march=i686 -msse3 -mstackrealign -mfpmath=sse"
 export ARCH_LINK=""
 
 ./Configure android-x86 \
           --prefix=$TOOLCHAIN/sysroot/usr/local \
-          --with-zlib-include=$TOOLCHAIN/sysroot/usr/include \
+          --with-zi686lib-include=$TOOLCHAIN/sysroot/usr/include \
           --with-zlib-lib=$TOOLCHAIN/sysroot/usr/lib \
           zlib \
           no-asm \

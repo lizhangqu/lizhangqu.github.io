@@ -99,7 +99,7 @@ export ARCH_FLAGS="-march=i686 -msse3 -mstackrealign -mfpmath=sse"
 export ARCH_LINK=""
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
-       --host=x86-linux-androideabi \
+       --host=i686-linux-androideabi \
        --enable-static \
        --disable-shared
 ```

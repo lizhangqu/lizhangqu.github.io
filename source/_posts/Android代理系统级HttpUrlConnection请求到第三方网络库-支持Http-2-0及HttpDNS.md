@@ -1,4 +1,4 @@
-title: Android代理系统HttpUrlConnection请求到第三方网络库-支持Http/2.0及HttpDNS
+title: Android代理系统级HttpUrlConnection请求到第三方网络库-支持Http/2.0及HttpDNS
 date: 2017-07-13 16:47:12
 categories: [Android]
 tags: [Android, HttpUrlConnection, URLStreamHandlerFactory]
@@ -8,7 +8,7 @@ tags: [Android, HttpUrlConnection, URLStreamHandlerFactory]
 
 看到这个标题，好长哇（恩，好长）！分解一下：
 
- 1. 原生的HttpUrlConnection请求代码.
+ 1. 使用原生的HttpUrlConnection请求代码.
  2. 在不改变现有代码的前提下将请求代理到第三方网络库，如OkHttp, Chromium网络栈, CURL等.
  3. 代理到第三方网络库后可以支持Http/2.0, HttpDNS等特性.
 
@@ -210,19 +210,19 @@ static URLStreamHandler getURLStreamHandler(String protocol) {
 ```
 
  1. 首先从handlers中根据协议返回一个URLStreamHandler对象，handlers是一个静态的Hashtable<String,URLStreamHandler>，主要起到一个缓存的作用，如果获取不到，则继续下一步操作。
- 2. 判断factory对象是否为空，如果不会空，则调用factory.createURLStreamHandler方法获取一个URLStreamHandler对象，如果不为空，则标记checkedWithFactory变量为true，用于后面检查时使用，如果返回空，则继续下一步操作
+ 2. 判断factory对象是否为空，如果不为空，则调用factory.createURLStreamHandler方法获取一个URLStreamHandler对象，如果URLStreamHandler对象不为空，则标记checkedWithFactory变量为true，用于后面检查时使用，如果返回空，则继续下一步操作
  3. 获取系统java.protocol.handler.pkgs属性，该值是JVM的启动参数，通过-D java.protocol.handler.pkgs来设置URLStreamHandler实现类的包路径，例如-D java.protocol.handler.pkgs=com.sample.protocol，代表处理实现类皆在这个包下。如果需要多个包的话，那么使用“|” 分割。比如-D java.protocol.handler.pkgs=com.sample.protocol1|com.sample.protocol2；而JDK内部默认实现类均是在sun.net.www.protocol包下。设置进去的包下的类的命名模式必须为[package_path].[protocol].Handler，比如我实现了http协议，则对应的实现类为com.sample.protocol.http.Handler，再比如我实现了https协议，则对应的实现类为com.sample.protocol.https.Handler，因为是需要用到反射，所以这些实现类必须有一个默认的构造函数。了解了这个原理之后，之后就是遍历满足条件的所有URLStreamHandler，直到找到一个对应协议的URLStreamHandler，反射构造它；如果找不到，则继续下一步操作。
  4. 如果协议是file协议，则使用默认包下的package_path.file.Handler对象，即sun.net.www.protocol.file.Handler对象
  5. 如果协议是ftp协议，则使用默认包下的package_path.ftp.Handler对象，即sun.net.www.protocol.ftp.Handler对象
  6. 如果协议是jar协议，则使用默认包下的package_path.jar.Handler对象，即sun.net.www.protocol.jar.Handler对象
  7. 如果协议是http协议，则使用com.android.okhttp.HttpHandler，注意此时OkHttp登场了，调用的方式是反射调用。对应的实现类在[HttpsHandler.java](https://android.googlesource.com/platform/external/okhttp/+/master/android/main/java/com/squareup/okhttp/HttpsHandler.java)
  8. 如果协议是https协议，则使用com.android.okhttp.HttpsHandler，也是反射调用，对应的实现类在[HttpsHandler.java](https://android.googlesource.com/platform/external/okhttp/+/master/android/main/java/com/squareup/okhttp/HttpsHandler.java)
- 9. 细心的你会发现，代码中反射的是com.android.okhttp.HttpHandler和com.android.okhttp.HttpsHandler，但是AOSP上的源码却是com.squareup.okhttp.HttpHandler和com.android.okhttpHttpsHandler，这是为什么呢，因为项目目录下存在一个叫[jarjar-rules.txt](https://android.googlesource.com/platform/external/okhttp/+/master/jarjar-rules.txt)的文件，它会将com.squareup重命名为com.android，以及将okio重命名为com.android.okhttp.okio
- 10. 最后就是一个检查的过程，检查其他线程是不是创建了相关的类，首先从handlers缓存中查找，如果找到了，则直接返回，无论当前的hander是否已经创建，都直接丢弃当前的handler对象，如果找不到，则检查其他线程是不是创建了factory对象，这个前提条件是最开始时factory并没有被创建，避免重复创建handler。如果这时候检查的handler2不为空，则将其赋值给handler，并且将handler对象存入handlers缓存中，将hanler对象返回。
+ 9. 细心的你会发现，代码中反射的是com.android.okhttp.HttpHandler和com.android.okhttp.HttpsHandler，但是AOSP上的源码却是com.squareup.okhttp.HttpHandler和com.android.okhttp.HttpsHandler，这是为什么呢，因为项目目录下存在一个叫[jarjar-rules.txt](https://android.googlesource.com/platform/external/okhttp/+/master/jarjar-rules.txt)的文件，它会将com.squareup重命名为com.android，以及将okio重命名为com.android.okhttp.okio
+ 10. 最后就是一个检查的过程，检查其他线程是不是创建了相关的类，首先从handlers缓存中查找，如果找到了，则直接返回，无论当前的hander是否已经创建，都直接丢弃当前的handler对象，如果找不到，则检查其他线程是不是创建了factory对象，这个前提条件是最开始时factory并没有被创建，从而避免重复创建handler。如果这时候检查的handler2不为空，则将其赋值给handler，并且将handler对象存入handlers缓存中，将hanler对象返回。
 
 从以上代码可以很快的找到我们有两个切入点
 
- - 我们有没有办法从构造函数中传入URLStreamHandler对象，代理所有请求
+ - 我们是否可以从构造函数中传入URLStreamHandler对象，代理所有请求
  - 我们是否可以全局代理掉URLStreamHandler的创建
 
 对于第一个问题，查找URL构造函数可以发现，确实存在这么一个构造函数，而且还不止一个
@@ -285,15 +285,20 @@ compile 'com.squareup.okhttp3:okhttp-urlconnection:3.8.1'
 设置URLStreamHandlerFactory对象为OkUrlFactory
 
 ```
-OkUrlFactory okUrlFactory = new OkUrlFactory(client);
-URL.setURLStreamHandlerFactory(okUrlFactory);
+try {
+    OkUrlFactory okUrlFactory = new OkUrlFactory(client);
+    URL.setURLStreamHandlerFactory(okUrlFactory);
+} catch(Exception e) {
+    //ignore
+}
+
 ```
 
 这时候你的请求就被代理到okhttp上了。
 
 #### 如何让OkHttp支持Http/2.0
 
-不用设置，默认5.0以上支持，只要你的网站支持alpn协议，它就能支持。
+不用设置，默认5.0以上支持，只要后端服务器支持alpn选择协议，它就能支持。
 
 #### 如何让OkHttp支持HttpDNS
 
@@ -344,7 +349,7 @@ private Call buildCall() throws IOException {
   }
 ```
 
-所以OkHttp的OkUrlFactory设置为UR记住一点，将LStreamHandlerFactory时，设置的OkHttpClient不要添加任何拦截器即可，添加了也会失效，或许这就是square比较坑的地方，和google一样坑。
+所以将OkHttp的OkUrlFactory设置为URLStreamHandlerFactory时，设置的OkHttpClient不要添加任何拦截器即可，添加了也会失效，或许这就是Square比较坑的地方，和Google爸爸一样坑。
 
 
 

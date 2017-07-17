@@ -280,7 +280,7 @@ std::string encryptRSA(const std::string &publicKey, const std::string &from) {
 
     //RSA_PKCS1_PADDING 最大加密长度 为 128 -11
     //RSA_NO_PADDING 最大加密长度为  128
-    rsa_size = rsa_size - RSA_PKCS1_PADDING_SIZE;
+    //rsa_size = rsa_size - RSA_PKCS1_PADDING_SIZE;
 
     //动态分配内存，用于存储加密后的密文
     unsigned char *to = (unsigned char *) malloc(rsa_size + 1);
@@ -334,6 +334,8 @@ rsa_size = rsa_size - RSA_PKCS1_PADDING_SIZE;
 ```
 
 **对于RSA_PKCS1_PADDING_SIZE，最大加密长度为需要减去11**
+
+**2017.7.17修改，第二点经过试验，废弃!**
 
 **第三点:**
 
