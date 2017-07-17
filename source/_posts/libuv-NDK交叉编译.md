@@ -58,7 +58,7 @@ cd libuv
 autoreconf -i
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
-       --host=arm-linux-androideabi \
+       --host=$TOOL \
        --enable-static \
        --disable-shared
 make -j4
@@ -85,7 +85,7 @@ cd libuv
 autoreconf -i
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
-       --host=arm-linux-androideabi \
+       --host=$TOOL \
        --enable-static \
        --disable-shared
 ```
@@ -94,12 +94,12 @@ x86
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=x86 --install-dir=./toolchain
-export TOOL=x86-linux-android
+export TOOL=i686-linux-android
 export ARCH_FLAGS="-march=i686 -msse3 -mstackrealign -mfpmath=sse"
 export ARCH_LINK=""
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
-       --host=i686-linux-androideabi \
+       --host=$TOOL \
        --enable-static \
        --disable-shared
 ```

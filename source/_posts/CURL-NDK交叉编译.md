@@ -165,7 +165,7 @@ export ARCH_LINK=""
 
 ./configure --prefix=$TOOLCHAIN/sysroot/usr/local \
        --with-sysroot=$TOOLCHAIN/sysroot \
-       --host=x86-linux-androideabi \
+       --host=i686-linux-android \
        --with-ssl=$TOOLCHAIN/sysroot/usr/local \
        --with-nghttp2=$TOOLCHAIN/sysroot/usr/local \
        --enable-ipv6 \
