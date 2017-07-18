@@ -4,34 +4,8 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
-    <lastmod>2017-07-18T02:44:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android 在 NDK 层使用 OpenSSL 进行 RSA 加密</title>
-        <pubTime>2017-04-09T09:23:44.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>OpenSSL</tag>
-         
-        <tag>RSA</tag>
-         
-        <tag>Base64</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/05/24/CURL-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-07-18T02:35:21.000Z</lastmod>
+    <lastmod>2017-07-18T03:20:18.000Z</lastmod>
     <data>
         <display>
         <title>CURL NDK 交叉编译</title>
@@ -55,7 +29,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-07-18T02:34:53.000Z</lastmod>
+    <lastmod>2017-07-18T03:19:59.000Z</lastmod>
     <data>
         <display>
         <title>libnghttp2 NDK 交叉编译</title>
@@ -79,7 +53,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-07-18T02:34:39.000Z</lastmod>
+    <lastmod>2017-07-18T03:19:50.000Z</lastmod>
     <data>
         <display>
         <title>openssl NDK 交叉编译</title>
@@ -90,6 +64,32 @@
         <tag>交叉编译</tag>
          
         <tag>openssl</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2017-07-18T02:44:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 在 NDK 层使用 OpenSSL 进行 RSA 加密</title>
+        <pubTime>2017-04-09T09:23:44.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>OpenSSL</tag>
+         
+        <tag>RSA</tag>
+         
+        <tag>Base64</tag>
          
          
            
@@ -124,21 +124,21 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/27/cmake-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
     <lastmod>2017-07-17T13:07:50.000Z</lastmod>
     <data>
         <display>
-        <title>cmake 交叉编译</title>
-        <pubTime>2017-06-27T13:29:06.000Z</pubTime>
+        <title>iOS-Empty-Application-Template-For-XCode8</title>
+        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
         
-        <tag>cmake</tag>
+        <tag>iOS</tag>
          
-        <tag>Android，ndk</tag>
+        <tag>XCode8</tag>
          
          
            
              
-              <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
+              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
           
         </display>
     </data>
@@ -146,21 +146,25 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-07-17T13:07:50.000Z</lastmod>
     <data>
         <display>
-        <title>Android NDK 内存泄露检测</title>
-        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
+        <title>Android Gradle Plugin 源码阅读与编译</title>
+        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
         
-        <tag>NDK</tag>
+        <tag>Android</tag>
          
-        <tag>Android，内存泄露检测</tag>
+        <tag>Gradle</tag>
+         
+        <tag>Instant Run</tag>
+         
+        <tag>AOSP</tag>
          
          
            
              
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
         </display>
     </data>
@@ -275,6 +279,50 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/06/27/cmake-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-07-17T13:07:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>cmake 交叉编译</title>
+        <pubTime>2017-06-27T13:29:06.000Z</pubTime>
+        
+        <tag>cmake</tag>
+         
+        <tag>Android，ndk</tag>
+         
+         
+           
+             
+              <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2017-07-17T13:07:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android NDK 内存泄露检测</title>
+        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>Android，内存泄露检测</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
     <lastmod>2017-07-17T13:07:50.000Z</lastmod>
     <data>
@@ -290,54 +338,6 @@
            
              
               <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-07-17T13:07:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android Gradle Plugin 源码阅读与编译</title>
-        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Gradle</tag>
-         
-        <tag>Instant Run</tag>
-         
-        <tag>AOSP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
-    <lastmod>2017-07-17T13:07:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>iOS-Empty-Application-Template-For-XCode8</title>
-        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
-        
-        <tag>iOS</tag>
-         
-        <tag>XCode8</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
           
         </display>
     </data>
