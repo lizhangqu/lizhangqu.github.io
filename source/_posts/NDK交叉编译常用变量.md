@@ -153,7 +153,7 @@ mips64
 
 ```
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh --arch=mips64 --install-dir=./toolchain
-export TOOL=mips64-linux-android
+export TOOL=mips64el-linux-android
 export ARCH_FLAGS=
 export ARCH_LINK=
 ```

@@ -260,7 +260,7 @@ std::string encryptRSA(const std::string &publicKey, const std::string &from) {
     //从字符串读取RSA公钥串
     if ((bio = BIO_new_mem_buf((void *) publicKey.c_str(), -1)) == NULL) {
         std::cout << "BIO_new_mem_buf failed!" << std::endl;
-        return NULL;
+        return "";
     }
     //读取公钥
     rsa_public_key = PEM_read_bio_RSA_PUBKEY(bio, NULL, NULL, NULL);
@@ -269,10 +269,9 @@ std::string encryptRSA(const std::string &publicKey, const std::string &from) {
     if (rsa_public_key == NULL) {
         //资源释放
         BIO_free_all(bio);
-        RSA_free(rsa_public_key);
         //清除管理CRYPTO_EX_DATA的全局hash表中的数据，避免内存泄漏
         CRYPTO_cleanup_all_ex_data();
-        return NULL;
+        return "";
     }
 
     //rsa模的位数
@@ -301,7 +300,7 @@ std::string encryptRSA(const std::string &publicKey, const std::string &from) {
         RSA_free(rsa_public_key);
         //清除管理CRYPTO_EX_DATA的全局hash表中的数据，避免内存泄漏
         CRYPTO_cleanup_all_ex_data();
-        return NULL;
+        return "";
     }
 
     //赋值密文
@@ -327,13 +326,13 @@ static std::string result((char *) to, status);
 
 **第二个参数表示密文长度，一般来说，这个值会是128，如果第二个值不传，会导致加密后的密文经过string的构造函数后，丢失一部分数据，导致数据的不正确**
 
-**第二点:**
+~~**第二点:**~~
 
 ```
 rsa_size = rsa_size - RSA_PKCS1_PADDING_SIZE;
 ```
 
-**对于RSA_PKCS1_PADDING_SIZE，最大加密长度为需要减去11**
+~~**对于RSA_PKCS1_PADDING_SIZE，最大加密长度为需要减去11**~~
 
 **2017.7.17修改，第二点经过试验，废弃!**
 
@@ -480,7 +479,7 @@ std::string decryptRSA(const std::string &privetaKey, const std::string &from) {
     //从字符串读取RSA公钥串
     if ((bio = BIO_new_mem_buf((void *) privetaKey.c_str(), -1)) == NULL) {
         std::cout << "BIO_new_mem_buf failed!" << std::endl;
-        return NULL;
+        return "";
     }
     //读取私钥
     rsa_private_key = PEM_read_bio_RSAPrivateKey(bio, NULL, NULL, NULL);
@@ -489,10 +488,9 @@ std::string decryptRSA(const std::string &privetaKey, const std::string &from) {
     if (rsa_private_key == NULL) {
         //资源释放
         BIO_free_all(bio);
-        RSA_free(rsa_private_key);
         //清除管理CRYPTO_EX_DATA的全局hash表中的数据，避免内存泄漏
         CRYPTO_cleanup_all_ex_data();
-        return NULL;
+        return "";
     }
 
     //rsa模的位数
@@ -519,7 +517,7 @@ std::string decryptRSA(const std::string &privetaKey, const std::string &from) {
         RSA_free(rsa_private_key);
         //清除管理CRYPTO_EX_DATA的全局hash表中的数据，避免内存泄漏
         CRYPTO_cleanup_all_ex_data();
-        return NULL;
+        return "";
     }
 
     //赋值明文，是否需要指定to的长度？
