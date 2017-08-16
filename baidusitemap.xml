@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
-    <lastmod>2017-08-16T08:46:34.000Z</lastmod>
+    <lastmod>2017-08-16T08:49:49.000Z</lastmod>
     <data>
         <display>
         <title>再谈 brew</title>
@@ -391,6 +391,54 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-07-27T10:45:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>openssl NDK 交叉编译</title>
+        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>openssl</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2017-07-27T10:45:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
+        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Fresco</tag>
+         
+        <tag>ImageLoader</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
     <lastmod>2017-07-27T10:45:01.000Z</lastmod>
     <data>
@@ -415,23 +463,21 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
     <lastmod>2017-07-27T10:45:01.000Z</lastmod>
     <data>
         <display>
-        <title>openssl NDK 交叉编译</title>
-        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
+        <title>编译时注解 5 步走</title>
+        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
         
-        <tag>NDK</tag>
+        <tag>Annotation</tag>
          
-        <tag>交叉编译</tag>
-         
-        <tag>openssl</tag>
+        <tag>Java</tag>
          
          
            
              
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
           
         </display>
     </data>
@@ -478,52 +524,6 @@
            
              
               <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-07-27T10:45:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
-        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Fresco</tag>
-         
-        <tag>ImageLoader</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
-    <lastmod>2017-07-27T10:45:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>编译时注解 5 步走</title>
-        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
-        
-        <tag>Annotation</tag>
-         
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
           
         </display>
     </data>
