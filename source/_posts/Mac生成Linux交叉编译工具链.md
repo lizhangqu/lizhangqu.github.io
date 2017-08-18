@@ -135,9 +135,9 @@ CT_PREFIX:-/Volumes/crosstool-ng/x-tools}/${CT_HOST:+HOST-${CT_HOST}/}${CT_TARGE
 
 #### 修改binutils版本
 
-因为我们拷贝的config使用的是2.28的binutils，而gnu的ftp上不存在该版本对应xy后缀的文件，所以需要修改版本为2.29，而2.29版本是存在xy后缀的文件的
+因为我们拷贝的config使用的是2.28的binutils，而gnu的ftp上不存在该版本对应xy后缀的文件，所以需要修改版本为2.28.1，而2.28.1版本是存在xy后缀的文件的
 
-还是一样进入menuconfig，找到Binary utilities->binutils version，修改版本号为2.29，但是发现这里没有2.29的选项，因此需要修改源码，然后重新执行编译安装步骤
+还是一样进入menuconfig，找到Binary utilities->binutils version，修改版本号为2.28.1，但是发现这里没有2.28.1的选项，因此需要修改源码，然后重新执行编译安装步骤
 
 打开源码crosstool-ng-1.23.0/config/binutils/binutils.in文件，找到如下代码
 
@@ -151,10 +151,10 @@ config BINUTILS_V_2_28
 在前面加入
 
 ```
-config BINUTILS_V_2_29
+config BINUTILS_V_2_28_1
     bool
-    prompt "2.29"
-    select BINUTILS_2_28_or_later
+    prompt "2.28.1"
+    select BINUTILS_2_27_or_later
 ```
 
 然后往下找到如下代码
@@ -175,7 +175,7 @@ default "2.23.2" if BINUTILS_V_2_23_2
 在前面加入下面的代码
 
 ```
-default "2.29" if BINUTILS_V_2_29
+default "2.28.1" if BINUTILS_V_2_28_1
 ```
 
 然后重新执行./configure、make -j4、make install等命令重新安装，然后再次进入menuconfig，会发现可以选择2.29了
@@ -191,7 +191,7 @@ ct-ng build
 然后会下载一些zip文件到/Volumes/crosstool-ng/.build/tarballs下，文件有
 
 ```
-binutils-2.29.tar.xz
+binutils-2.28.1.tar.xz
 expat-2.2.0.tar.bz2
 gcc-6.3.0.tar.bz2
 gdb-7.12.1.tar.xz
