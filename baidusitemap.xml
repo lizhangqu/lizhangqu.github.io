@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
-    <lastmod>2017-08-18T08:37:55.000Z</lastmod>
+    <lastmod>2017-08-18T14:48:13.000Z</lastmod>
     <data>
         <display>
         <title>Mac 生成 Linux 交叉编译工具链</title>
@@ -28,21 +28,25 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
+    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
         <display>
-        <title>iOS-Empty-Application-Template-For-XCode8</title>
-        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
+        <title>Android Gradle Plugin 源码阅读与编译</title>
+        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
         
-        <tag>iOS</tag>
+        <tag>Android</tag>
          
-        <tag>XCode8</tag>
+        <tag>Gradle</tag>
+         
+        <tag>Instant Run</tag>
+         
+        <tag>AOSP</tag>
          
          
            
              
-              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
+              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
         </display>
     </data>
@@ -94,30 +98,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
-        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>HttpUrlConnection</tag>
-         
-        <tag>URLStreamHandlerFactory</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
@@ -161,6 +141,30 @@
            
              
               <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
+        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>HttpUrlConnection</tag>
+         
+        <tag>URLStreamHandlerFactory</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
@@ -227,28 +231,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>IntelliJ IDEA 远程调试</title>
-        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
-        
-        <tag>IDEA</tag>
-         
-        <tag>远程调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
@@ -268,6 +250,28 @@
            
              
               <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>IntelliJ IDEA 远程调试</title>
+        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
+        
+        <tag>IDEA</tag>
+         
+        <tag>远程调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
           
         </display>
     </data>
@@ -312,32 +316,6 @@
            
              
               <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android Gradle Plugin 源码阅读与编译</title>
-        <pubTime>2017-06-01T03:09:21.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Gradle</tag>
-         
-        <tag>Instant Run</tag>
-         
-        <tag>AOSP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
         </display>
     </data>
@@ -463,30 +441,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
-        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Fresco</tag>
-         
-        <tag>ImageLoader</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
@@ -504,6 +458,28 @@
            
              
               <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>当 Android 开发者遇见 TensorFlow</title>
+        <pubTime>2017-06-02T12:14:52.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>机器学习，Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
           
         </display>
     </data>
@@ -533,21 +509,45 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
+    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
         <display>
-        <title>当 Android 开发者遇见 TensorFlow</title>
-        <pubTime>2017-06-02T12:14:52.000Z</pubTime>
+        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
+        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
         
-        <tag>TensorFlow</tag>
+        <tag>Android</tag>
          
-        <tag>机器学习，Android</tag>
+        <tag>Fresco</tag>
+         
+        <tag>ImageLoader</tag>
          
          
            
              
-              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>iOS-Empty-Application-Template-For-XCode8</title>
+        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
+        
+        <tag>iOS</tag>
+         
+        <tag>XCode8</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
           
         </display>
     </data>
