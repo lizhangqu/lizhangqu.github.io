@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/10/05/Google-Archive-Patch-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
-    <lastmod>2017-10-05T07:36:54.408Z</lastmod>
+    <lastmod>2017-10-05T07:39:49.756Z</lastmod>
     <data>
         <display>
         <title>Google Archive Patch 源码解析</title>
@@ -233,28 +233,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>IntelliJ IDEA 远程调试</title>
-        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
-        
-        <tag>IDEA</tag>
-         
-        <tag>远程调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
@@ -281,23 +259,21 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
+    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
         <display>
-        <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
-        <pubTime>2017-06-24T11:42:31.000Z</pubTime>
+        <title>IntelliJ IDEA 远程调试</title>
+        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
         
-        <tag>Android</tag>
+        <tag>IDEA</tag>
          
-        <tag>NDK</tag>
-         
-        <tag>Android Gradle Plugin</tag>
+        <tag>远程调试</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
           
         </display>
     </data>
@@ -320,6 +296,30 @@
            
              
               <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
+        <pubTime>2017-06-24T11:42:31.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>NDK</tag>
+         
+        <tag>Android Gradle Plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
@@ -493,30 +493,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
-        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Fresco</tag>
-         
-        <tag>ImageLoader</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
     <lastmod>2017-08-18T03:18:41.000Z</lastmod>
     <data>
@@ -554,6 +530,30 @@
            
              
               <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
+        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Fresco</tag>
+         
+        <tag>ImageLoader</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
