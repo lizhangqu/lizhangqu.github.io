@@ -4,8 +4,397 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/10/31/aapt2%E8%B5%84%E6%BA%90compile%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2017-10-31T05:38:10.722Z</lastmod>
+    <data>
+        <display>
+        <title>aapt2 资源 compile 过程</title>
+        <pubTime>2017-10-31T01:59:11.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>aapt2</tag>
+         
+        <tag>资源编译</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+  <url>
+    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
+    <lastmod>2017-10-05T07:44:59.420Z</lastmod>
+    <data>
+        <display>
+        <title>编译时注解 5 步走</title>
+        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
+        
+        <tag>Annotation</tag>
+         
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
+    <lastmod>2017-10-05T07:44:59.398Z</lastmod>
+    <data>
+        <display>
+        <title>当 Android 开发者遇见 TensorFlow</title>
+        <pubTime>2017-06-02T12:14:52.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>机器学习，Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2017-10-05T07:44:59.384Z</lastmod>
+    <data>
+        <display>
+        <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
+        <pubTime>2017-07-05T01:07:10.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Android Gradle Plugin</tag>
+         
+        <tag>Debug</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
+    <lastmod>2017-10-05T07:44:59.383Z</lastmod>
+    <data>
+        <display>
+        <title>再谈 brew</title>
+        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2017-10-05T07:44:59.382Z</lastmod>
+    <data>
+        <display>
+        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
+        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Fresco</tag>
+         
+        <tag>ImageLoader</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-10-05T07:44:59.381Z</lastmod>
+    <data>
+        <display>
+        <title>openssl NDK 交叉编译</title>
+        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>openssl</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-10-05T07:44:59.380Z</lastmod>
+    <data>
+        <display>
+        <title>libuv NDK 交叉编译</title>
+        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>libuv</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-10-05T07:44:59.379Z</lastmod>
+    <data>
+        <display>
+        <title>libnghttp2 NDK 交叉编译</title>
+        <pubTime>2017-05-24T09:25:39.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>nghttp2</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/27/cmake-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-10-05T07:44:59.377Z</lastmod>
+    <data>
+        <display>
+        <title>cmake 交叉编译</title>
+        <pubTime>2017-06-27T13:29:06.000Z</pubTime>
+        
+        <tag>cmake</tag>
+         
+        <tag>Android，ndk</tag>
+         
+         
+           
+             
+              <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
+    <lastmod>2017-10-05T07:44:59.377Z</lastmod>
+    <data>
+        <display>
+        <title>iOS-Empty-Application-Template-For-XCode8</title>
+        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
+        
+        <tag>iOS</tag>
+         
+        <tag>XCode8</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/22/NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2017-10-05T07:44:59.376Z</lastmod>
+    <data>
+        <display>
+        <title>NDK 交叉编译常用变量</title>
+        <pubTime>2017-06-22T13:01:51.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
+    <lastmod>2017-10-05T07:44:59.375Z</lastmod>
+    <data>
+        <display>
+        <title>IntelliJ IDEA 远程调试</title>
+        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
+        
+        <tag>IDEA</tag>
+         
+        <tag>远程调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
+    <lastmod>2017-10-05T07:44:59.375Z</lastmod>
+    <data>
+        <display>
+        <title>Mac 生成 Linux 交叉编译工具链</title>
+        <pubTime>2017-08-18T03:41:58.000Z</pubTime>
+        
+        <tag>交叉编译</tag>
+         
+        <tag>Mac</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
+    <lastmod>2017-10-05T07:44:59.347Z</lastmod>
+    <data>
+        <display>
+        <title>Https&Http2.0&HttpDNS 的那些事</title>
+        <pubTime>2017-01-17T07:34:58.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Http/2.0</tag>
+         
+        <tag>HttpDNS</tag>
+         
+        <tag>OkHttp</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
+    <lastmod>2017-10-05T07:44:59.346Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 区长</title>
+        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2017-10-05T07:44:59.345Z</lastmod>
+    <data>
+        <display>
+        <title>Gradle 函数复用的一点实践</title>
+        <pubTime>2017-01-12T09:05:29.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Gradle</tag>
+         
+         
+           
+             
+              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/10/05/Google-Archive-Patch-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
-    <lastmod>2017-10-05T07:42:56.781Z</lastmod>
+    <lastmod>2017-10-05T07:44:59.343Z</lastmod>
     <data>
         <display>
         <title>Google Archive Patch 源码解析</title>
@@ -32,86 +421,16 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
-    <lastmod>2017-08-18T14:48:13.000Z</lastmod>
+    <loc>https://fucknmb.com/2017/06/12/Chromium-%E7%BD%91%E7%BB%9C%E6%A0%88%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2017-10-05T07:44:59.342Z</lastmod>
     <data>
         <display>
-        <title>Mac 生成 Linux 交叉编译工具链</title>
-        <pubTime>2017-08-18T03:41:58.000Z</pubTime>
+        <title>Chromium 网络栈的编译与使用</title>
+        <pubTime>2017-06-12T03:15:21.000Z</pubTime>
         
-        <tag>交叉编译</tag>
+        <tag>Chromium</tag>
          
-        <tag>Mac</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>iOS-Empty-Application-Template-For-XCode8</title>
-        <pubTime>2017-02-10T03:19:37.000Z</pubTime>
-        
-        <tag>iOS</tag>
-         
-        <tag>XCode8</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="https://fucknmb.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android Studio Library 模块中 Native 代码进行 debug 的一些坑</title>
-        <pubTime>2017-05-11T04:39:14.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>Debug</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
-        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>HttpUrlConnection</tag>
-         
-        <tag>URLStreamHandlerFactory</tag>
+        <tag>Android，Network</tag>
          
          
            
@@ -125,7 +444,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <lastmod>2017-10-05T07:44:59.341Z</lastmod>
     <data>
         <display>
         <title>Android 在 NDK 层使用 OpenSSL 进行 RSA 加密</title>
@@ -151,7 +470,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/05/24/CURL-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <lastmod>2017-10-05T07:44:59.341Z</lastmod>
     <data>
         <display>
         <title>CURL NDK 交叉编译</title>
@@ -174,16 +493,18 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/12/Chromium-%E7%BD%91%E7%BB%9C%E6%A0%88%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
+    <lastmod>2017-10-05T07:44:59.340Z</lastmod>
     <data>
         <display>
-        <title>Chromium 网络栈的编译与使用</title>
-        <pubTime>2017-06-12T03:15:21.000Z</pubTime>
+        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
+        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
         
-        <tag>Chromium</tag>
+        <tag>Android</tag>
          
-        <tag>Android，Network</tag>
+        <tag>HttpUrlConnection</tag>
+         
+        <tag>URLStreamHandlerFactory</tag>
          
          
            
@@ -196,125 +517,16 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <loc>https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
+    <lastmod>2017-10-05T07:44:59.339Z</lastmod>
     <data>
         <display>
-        <title>Hello 区长</title>
-        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Gradle 函数复用的一点实践</title>
-        <pubTime>2017-01-12T09:05:29.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Gradle</tag>
-         
-         
-           
-             
-              <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>IntelliJ IDEA 远程调试</title>
-        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
-        
-        <tag>IDEA</tag>
-         
-        <tag>远程调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Https&Http2.0&HttpDNS 的那些事</title>
-        <pubTime>2017-01-17T07:34:58.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Http/2.0</tag>
-         
-        <tag>HttpDNS</tag>
-         
-        <tag>OkHttp</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
-        <pubTime>2017-06-24T11:42:31.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>NDK</tag>
-         
-        <tag>Android Gradle Plugin</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/22/NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>NDK 交叉编译常用变量</title>
-        <pubTime>2017-06-22T13:01:51.000Z</pubTime>
+        <title>Android Studio Library 模块中 Native 代码进行 debug 的一些坑</title>
+        <pubTime>2017-05-11T04:39:14.000Z</pubTime>
         
         <tag>NDK</tag>
          
-        <tag>交叉编译</tag>
+        <tag>Debug</tag>
          
          
            
@@ -327,21 +539,21 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/27/cmake-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2017-10-05T07:44:59.337Z</lastmod>
     <data>
         <display>
-        <title>cmake 交叉编译</title>
-        <pubTime>2017-06-27T13:29:06.000Z</pubTime>
+        <title>Android NDK 内存泄露检测</title>
+        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
         
-        <tag>cmake</tag>
+        <tag>NDK</tag>
          
-        <tag>Android，ndk</tag>
+        <tag>Android，内存泄露检测</tag>
          
          
            
              
-              <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
           
         </display>
     </data>
@@ -350,7 +562,7 @@
     
   <url>
     <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <lastmod>2017-10-05T07:44:59.323Z</lastmod>
     <data>
         <display>
         <title>Android Gradle Plugin 源码阅读与编译</title>
@@ -375,113 +587,19 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
+    <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
+    <lastmod>2017-10-05T07:44:59.320Z</lastmod>
     <data>
         <display>
-        <title>libnghttp2 NDK 交叉编译</title>
-        <pubTime>2017-05-24T09:25:39.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>nghttp2</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>libuv NDK 交叉编译</title>
-        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>libuv</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>openssl NDK 交叉编译</title>
-        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>openssl</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>再谈 brew</title>
-        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
-        <pubTime>2017-07-05T01:07:10.000Z</pubTime>
+        <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
+        <pubTime>2017-06-24T11:42:31.000Z</pubTime>
         
         <tag>Android</tag>
+         
+        <tag>NDK</tag>
          
         <tag>Android Gradle Plugin</tag>
          
-        <tag>Debug</tag>
-         
          
            
              
@@ -491,99 +609,5 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
-        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>Fresco</tag>
-         
-        <tag>ImageLoader</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>当 Android 开发者遇见 TensorFlow</title>
-        <pubTime>2017-06-02T12:14:52.000Z</pubTime>
-        
-        <tag>TensorFlow</tag>
-         
-        <tag>机器学习，Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>编译时注解 5 步走</title>
-        <pubTime>2017-02-07T04:31:10.000Z</pubTime>
-        
-        <tag>Annotation</tag>
-         
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://fucknmb.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
-    <lastmod>2017-08-18T03:18:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android NDK 内存泄露检测</title>
-        <pubTime>2017-06-05T07:01:06.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>Android，内存泄露检测</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
     
 </urlset>
