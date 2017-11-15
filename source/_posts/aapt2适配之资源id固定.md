@@ -100,6 +100,8 @@ class PublicPlugin implements Plugin<Project> {
 
 很简单，生成public.xml时使用aapt的参数-P，指定生成的文件路径即可；应用public.xml则将其拷贝到values目录下，唯一需要注意的是这个导出的public.xml文件会存在资源id未定义的情况，因此需要生成ids.xml文件，对未定义的id类型资源进行定义。而这个生成的ids.xml文件，可能与values/values.xml文件中的id存在重复定义的现象，因此生成的时候，则需要判断对应的id名在values.xml文件中是否存在，如果存在则直接忽略，因为它已经定义了；如果不存在，则添加到ids.xml中进行定义。
 
+这种方式不支持删除现有的资源，如果删除了现有的资源，public.xml中的定义也得删除，否则会报资源未定义的错误。
+
 ### aapt2的资源固定方式
 
 那么在aapt2中上面这种方式还生效吗，答案是否定的，至于为什么，可以参考之前的一篇文章[aapt2 资源 compile 过程](/2017/10/31/aapt2资源compile过程/)，因为所有merge的资源都已经经过了预编译，产生了flat文件，这时候将public.xml文件拷贝至该目录就会产生编译错误。那么如何解决了。通过查看Android Gradle Plugin 3.0.0的代码发现了一些猫腻，关键代码如下
@@ -130,7 +132,8 @@ public static ImmutableList<String> makeLink(
 
 大概意思就是说可以通过--emit-ids参数指定一个文件，该文件会输出资源名字到资源id的一个映射，这个文件可以被--stable-ids参数使用。
 
-通过简单的测试，发现这两个参数可以完全满足我们的需求。编写代码验证之。
+
+通过简单的测试，发现这两个参数可以完全满足我们的需求。而且这种方式支持删除现有的资源。编写代码验证之。
 
 
 ```
