@@ -367,6 +367,32 @@ android {
 }
 ```
 
+### public.xml到public.txt的转换
+
+如果之前是用aapt备份下来的public.xml，如果现在使用了aapt2，则需要将文件进行转换，转换方式也很简单，如下
+
+```
+task convertPublicXmlToPublicTxt() {
+    doLast {
+        //源public.xml
+        File publicXmlFile = project.rootProject.file('backup/public.xml')
+        //目标public.txt
+        File publicTxtFile = project.rootProject.file('backup/generate_public.txt')
+        //包名
+        String applicationId = "io.github.lizhangqu.aapt2"
+        GFileUtils.deleteQuietly(publicTxtFile)
+        GFileUtils.touch(publicTxtFile)
+        def nodes = new XmlParser().parse(publicXmlFile)
+        nodes.each {
+            project.logger.error "${it}"
+            publicTxtFile.append("${applicationId}:${it.@type}/${it.@name} = ${it.@id}\n")
+        }
+    }
+}
+```
+
+执行 gradle convertPublicXmlToPublicTxt即可完成转换
+
 
 ### 意外的收获aapt2资源分区
 
