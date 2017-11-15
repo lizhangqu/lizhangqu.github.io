@@ -391,7 +391,9 @@ task convertPublicXmlToPublicTxt() {
 }
 ```
 
-执行 gradle convertPublicXmlToPublicTxt即可完成转换
+执行 gradle convertPublicXmlToPublicTxt即可完成转换。
+
+值得注意的是，这种转换方式，由于原先aapt导出的public.xml中没有styleable的定义，所以转换后的public.txt中也没有styleable，即转换后的数据是aapt2导出的数据的子集，而aapt2生成的public.txt是具有styleable类型的id的，但是实际应用过程中并没有发现什么大的问题，因此几乎可以忽略不计。如果你发现有问题，可以及时联系我。
 
 
 ### 意外的收获aapt2资源分区
