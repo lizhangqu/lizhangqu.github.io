@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/11/15/aapt2%E9%80%82%E9%85%8D%E4%B9%8B%E8%B5%84%E6%BA%90id%E5%9B%BA%E5%AE%9A/</loc>
+    <lastmod>2017-12-11T14:14:47.197Z</lastmod>
+    <data>
+        <display>
+        <title>aapt2 适配之资源 id 固定</title>
+        <pubTime>2017-11-15T05:33:42.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>aapt2</tag>
+         
+        <tag>资源id固定</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-11-17T03:16:51.704Z</lastmod>
     <data>
@@ -144,30 +168,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-11-15T10:18:31.968Z</lastmod>
-    <data>
-        <display>
-        <title>openssl NDK 交叉编译</title>
-        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>openssl</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-11-15T10:18:31.968Z</lastmod>
     <data>
@@ -180,6 +180,30 @@
         <tag>交叉编译</tag>
          
         <tag>libuv</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-11-15T10:18:31.968Z</lastmod>
+    <data>
+        <display>
+        <title>openssl NDK 交叉编译</title>
+        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>openssl</tag>
          
          
            
@@ -253,30 +277,6 @@
            
              
               <breadCrumb title="cmake" url="https://fucknmb.com/categories/cmake/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/11/15/aapt2%E9%80%82%E9%85%8D%E4%B9%8B%E8%B5%84%E6%BA%90id%E5%9B%BA%E5%AE%9A/</loc>
-    <lastmod>2017-11-15T10:18:31.957Z</lastmod>
-    <data>
-        <display>
-        <title>aapt2 适配之资源 id 固定</title>
-        <pubTime>2017-11-15T05:33:42.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>aapt2</tag>
-         
-        <tag>资源id固定</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
