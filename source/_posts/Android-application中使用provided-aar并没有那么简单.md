@@ -852,7 +852,7 @@ def resolveArtifactFromRepository = { Project project,
                 }
             } else {
                 //在线模式，走远程依赖，实际逻辑gradle内部处理，找到了就返回true
-                boolean fetchFromRemoteResult = fetchFromRemote(project, externalResourceArtifactResolver, moduleComponentArtifactMetadata, dependency)
+                boolean fetchFromRemoteResult = fetchFromRemote(project, externalResourceArtifactResolver, moduleComponentArtifactMetadata, repository, dependency)
                 if (fetchFromRemoteResult) {
                     return true
                 }
@@ -1044,6 +1044,7 @@ def fetchFromLocalCache = { Project project,
 def fetchFromRemote = { Project project,
                         ExternalResourceArtifactResolver externalResourceArtifactResolver,
                         def moduleComponentArtifactMetadata,
+                        def repository,
                         def dependency ->
     try {
         if (moduleComponentArtifactMetadata != null) {
