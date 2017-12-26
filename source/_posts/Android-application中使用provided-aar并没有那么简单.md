@@ -1093,7 +1093,7 @@ def fetchFromRemote = { Project project,
 
 将以上代码进行组合，就得到了[CompatPlugin.groovy中的providedAarCompat函数](https://github.com/lizhangqu/AndroidGradlePluginCompat/blob/master/buildSrc/src/main/groovy/io/github/lizhangqu/plugin/compat/CompatPlugin.groovy)，搜索该文件中的providedAarCompat函数，即最终组合完成的代码。
 
-可以看到，整个实现逻辑还是是否复杂的，尤其是本地缓存依赖和在线依赖的解析部分，以及SNAPSHOT版本时间戳的获取及对应对应的包装。需要理解整个过程还是需要自己过一遍整个代码。
+可以看到，整个实现逻辑还是十分复杂的，尤其是本地缓存依赖和在线依赖的解析部分，以及SNAPSHOT版本时间戳的获取及对应类的包装。需要理解整个过程还是需要自己过一遍整个代码。
 
 不过遗憾的是，这部分的实现是不支持传递依赖的，如果要支持传递依赖，则会涉及到configuration的传递，逻辑会变得更加复杂，因此这里就不处理了，实际上问题也不大，只需要手动声明传递依赖即可。
 
