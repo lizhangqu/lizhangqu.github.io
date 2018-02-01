@@ -4,7 +4,7 @@
     <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
       <span>赏</span>
     </button>
-    <div id="QR" style="display: none;">
+    <div id="QR" style="display: block;">
       {% if theme.wechatpay %}
         <div id="wechat" style="display: inline-block">
           <img id="wechat_qr" src="{{ theme.wechatpay }}" alt="{{ theme.author }} WeChat Pay"/>
