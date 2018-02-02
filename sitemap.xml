@@ -2,261 +2,268 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://fucknmb.com/2018/01/24/%E8%A7%A3%E5%86%B3CLion%E6%8A%A5%E7%BA%A2NDK%E7%9B%B8%E5%85%B3%E5%A4%B4%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://fucknmb.com/2018/02/02/aapt2-%E7%94%9F%E6%88%90%E8%B5%84%E6%BA%90public-flag%E6%A0%87%E8%AE%B0/</loc>
     
-    <lastmod>2018-01-24T02:32:48.086Z</lastmod>
+    <lastmod>2018-02-02T05:48:28.250Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/tags/index.html</loc>
     
-    <lastmod>2017-12-26T01:46:27.025Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.708Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/categories/index.html</loc>
     
-    <lastmod>2017-12-26T01:46:27.019Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://fucknmb.com/about/index.html</loc>
-    
-    <lastmod>2017-12-26T01:46:27.018Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.705Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/baidu_verify_N05raoBIss.html</loc>
     
-    <lastmod>2017-12-26T01:46:27.018Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fucknmb.com/about/index.html</loc>
+    
+    <lastmod>2018-02-01T00:55:10.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fucknmb.com/2018/01/24/%E8%A7%A3%E5%86%B3CLion%E6%8A%A5%E7%BA%A2NDK%E7%9B%B8%E5%85%B3%E5%A4%B4%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2018-02-01T00:55:10.689Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/02/07/%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A35%E6%AD%A5%E8%B5%B0/</loc>
     
-    <lastmod>2017-12-26T01:46:27.016Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.686Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/02/%E5%BD%93Android%E5%BC%80%E5%8F%91%E8%80%85%E9%81%87%E8%A7%81TensorFlow/</loc>
     
-    <lastmod>2017-12-26T01:46:26.991Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.659Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
     
-    <lastmod>2017-12-26T01:46:26.978Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.648Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
     
-    <lastmod>2017-12-26T01:46:26.977Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.647Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
     
-    <lastmod>2017-12-26T01:46:26.976Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.646Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.974Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.645Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.973Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.644Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/05/24/libnghttp2-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.973Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.643Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/02/10/iOS-Empty-Application-Template-For-XCode8/</loc>
     
-    <lastmod>2017-12-26T01:46:26.970Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.639Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/27/cmake-%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.969Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.638Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/11/15/aapt2%E9%80%82%E9%85%8D%E4%B9%8B%E8%B5%84%E6%BA%90id%E5%9B%BA%E5%AE%9A/</loc>
     
-    <lastmod>2017-12-26T01:46:26.968Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.637Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/10/31/aapt2%E8%B5%84%E6%BA%90compile%E8%BF%87%E7%A8%8B/</loc>
     
-    <lastmod>2017-12-26T01:46:26.960Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.630Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/12/18/Ubuntu%E4%BD%BF%E7%94%A8ming-w64%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
     
-    <lastmod>2017-12-26T01:46:26.959Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.629Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.958Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.629Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/22/NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F/</loc>
     
-    <lastmod>2017-12-26T01:46:26.957Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
-    
-    <lastmod>2017-12-26T01:46:26.956Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.628Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
     
-    <lastmod>2017-12-26T01:46:26.955Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.627Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
+    
+    <lastmod>2018-02-01T00:55:10.627Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/01/17/Https&Http2.0&HttpDNS%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     
-    <lastmod>2017-12-26T01:46:26.923Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
-    
-    <lastmod>2017-12-26T01:46:26.922Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.583Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
     
-    <lastmod>2017-12-26T01:46:26.922Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
+    
+    <lastmod>2018-02-01T00:55:10.581Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/10/05/Google-Archive-Patch-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
     
-    <lastmod>2017-12-26T01:46:26.919Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.576Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/12/Chromium-%E7%BD%91%E7%BB%9C%E6%A0%88%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
     
-    <lastmod>2017-12-26T01:46:26.918Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.574Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/05/24/CURL-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.917Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.573Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
     
-    <lastmod>2017-12-26T01:46:26.916Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.571Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
     
-    <lastmod>2017-12-26T01:46:26.915Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.570Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/12/24/Android-application%E4%B8%AD%E4%BD%BF%E7%94%A8provided-aar%E5%B9%B6%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95/</loc>
     
-    <lastmod>2017-12-26T01:46:26.914Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.568Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.911Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.566Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/05/Android-NDK-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%A3%80%E6%B5%8B/</loc>
     
-    <lastmod>2017-12-26T01:46:26.906Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.561Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/01/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BC%96%E8%AF%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.890Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.538Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
     
-    <lastmod>2017-12-26T01:46:26.886Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.532Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/2017/11/06/Android-FileChannel%E7%9A%84%E5%9D%91/</loc>
     
-    <lastmod>2017-12-26T01:46:26.885Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.531Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://fucknmb.com/404.html</loc>
     
-    <lastmod>2017-12-26T01:46:26.884Z</lastmod>
+    <lastmod>2018-02-01T00:55:10.528Z</lastmod>
     
   </url>
   
