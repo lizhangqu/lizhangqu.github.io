@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2018/03/12/%E7%A7%BB%E9%99%A4Android-P-DP1%E5%AF%B9%E7%A7%81%E6%9C%89API%E8%B0%83%E7%94%A8%E7%9A%84%E8%AD%A6%E5%91%8A-%E4%BA%8C/</loc>
-    <lastmod>2018-03-12T06:20:35.251Z</lastmod>
+    <lastmod>2018-03-12T06:22:31.437Z</lastmod>
     <data>
         <display>
         <title>移除 Android P DP1 对私有 API 调用的警告 (二)</title>
@@ -125,9 +125,33 @@
         
         <tag>Android</tag>
          
+        <tag>Android Gradle Plugin</tag>
+         
         <tag>Debug</tag>
          
-        <tag>Android Gradle Plugin</tag>
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2018-02-02T05:59:13.180Z</lastmod>
+    <data>
+        <display>
+        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
+        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Fresco</tag>
+         
+        <tag>ImageLoader</tag>
          
          
            
@@ -162,23 +186,23 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/27/%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8Fresco%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2018-02-02T05:59:13.180Z</lastmod>
+    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2018-02-02T05:59:13.178Z</lastmod>
     <data>
         <display>
-        <title>一种使用 Fresco 非侵入式加载图片的方式</title>
-        <pubTime>2017-07-27T05:07:43.000Z</pubTime>
+        <title>openssl NDK 交叉编译</title>
+        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
         
-        <tag>Android</tag>
+        <tag>NDK</tag>
          
-        <tag>Fresco</tag>
+        <tag>交叉编译</tag>
          
-        <tag>ImageLoader</tag>
+        <tag>openssl</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
           
         </display>
     </data>
@@ -198,30 +222,6 @@
         <tag>交叉编译</tag>
          
         <tag>libuv</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2018-02-02T05:59:13.178Z</lastmod>
-    <data>
-        <display>
-        <title>openssl NDK 交叉编译</title>
-        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>openssl</tag>
          
          
            
@@ -350,6 +350,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2018/02/02/aapt2-%E7%94%9F%E6%88%90%E8%B5%84%E6%BA%90public-flag%E6%A0%87%E8%AE%B0/</loc>
+    <lastmod>2018-02-02T05:59:13.166Z</lastmod>
+    <data>
+        <display>
+        <title>aapt2 生成资源 public flag 标记</title>
+        <pubTime>2018-02-02T03:54:51.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>aapt2</tag>
+         
+        <tag>资源public flag</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/12/18/Ubuntu%E4%BD%BF%E7%94%A8ming-w64%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2018-02-02T05:59:13.166Z</lastmod>
     <data>
@@ -364,30 +388,6 @@
         <tag>ming-w64</tag>
          
         <tag>windows</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2018/02/02/aapt2-%E7%94%9F%E6%88%90%E8%B5%84%E6%BA%90public-flag%E6%A0%87%E8%AE%B0/</loc>
-    <lastmod>2018-02-02T05:59:13.166Z</lastmod>
-    <data>
-        <display>
-        <title>aapt2 生成资源 public flag 标记</title>
-        <pubTime>2018-02-02T03:54:51.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>aapt2</tag>
-         
-        <tag>资源public flag</tag>
          
          
            
@@ -516,21 +516,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
-    <lastmod>2018-02-02T05:59:13.121Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 区长</title>
-        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2018-02-02T05:59:13.121Z</lastmod>
     <data>
@@ -547,6 +532,21 @@
              
               <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
+    <lastmod>2018-02-02T05:59:13.121Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 区长</title>
+        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
