@@ -39,7 +39,7 @@ W/zygote: Accessing hidden method Landroid/content/res/AssetManager;-><init>()V 
 W/zygote: Accessing hidden method Landroid/content/res/AssetManager;->addAssetPath(Ljava/lang/String;)I (light greylist, reflection)
 ```
 
-我们来捕获一下日志中的关键信息，dark greylist, reflection和light greylist, reflection和light，也就是说这个警告是我们反射调用私有黑名单或者灰名单中的API引起的，那么我们不用反射调用就可以了。
+我们来捕获一下日志中的关键信息，dark greylist, reflection和light greylist, reflection，也就是说这个警告是我们反射调用私有黑名单或者灰名单中的API引起的，那么我们不用反射调用就可以了。
 
 其实问题很简单，只要使用完整的android.jar进行编译，就可以不用反射，但是这个方法并不能完全解决，因为一些方法是private或者protected的，不用反射根本无法调用到，因此这篇文章介绍的方法，**只能减少控制台日志的警告，不能完全去除控制台日志的警告**。具体的解决思路如下：
 
