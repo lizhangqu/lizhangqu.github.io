@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2018/03/31/Application-ProvidedAar%E5%AE%8C%E7%BB%93%E7%AF%87/</loc>
+    <lastmod>2018-03-31T12:42:26.668Z</lastmod>
+    <data>
+        <display>
+        <title>Application ProvidedAar 完结篇</title>
+        <pubTime>2018-03-31T10:28:43.000Z</pubTime>
+        
+        <tag>gradle</tag>
+         
+        <tag>android</tag>
+         
+        <tag>providedAar</tag>
+         
+        <tag>maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
     <lastmod>2018-03-19T05:34:31.809Z</lastmod>
     <data>
@@ -212,30 +238,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2018-02-02T05:59:13.178Z</lastmod>
-    <data>
-        <display>
-        <title>libuv NDK 交叉编译</title>
-        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>libuv</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2018-02-02T05:59:13.178Z</lastmod>
     <data>
@@ -248,6 +250,30 @@
         <tag>交叉编译</tag>
          
         <tag>openssl</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/06/04/libuv-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2018-02-02T05:59:13.178Z</lastmod>
+    <data>
+        <display>
+        <title>libuv NDK 交叉编译</title>
+        <pubTime>2017-06-04T04:23:54.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>交叉编译</tag>
+         
+        <tag>libuv</tag>
          
          
            
@@ -376,30 +402,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2018/02/02/aapt2-%E7%94%9F%E6%88%90%E8%B5%84%E6%BA%90public-flag%E6%A0%87%E8%AE%B0/</loc>
-    <lastmod>2018-02-02T05:59:13.166Z</lastmod>
-    <data>
-        <display>
-        <title>aapt2 生成资源 public flag 标记</title>
-        <pubTime>2018-02-02T03:54:51.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>aapt2</tag>
-         
-        <tag>资源public flag</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/12/18/Ubuntu%E4%BD%BF%E7%94%A8ming-w64%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2018-02-02T05:59:13.166Z</lastmod>
     <data>
@@ -414,6 +416,30 @@
         <tag>ming-w64</tag>
          
         <tag>windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2018/02/02/aapt2-%E7%94%9F%E6%88%90%E8%B5%84%E6%BA%90public-flag%E6%A0%87%E8%AE%B0/</loc>
+    <lastmod>2018-02-02T05:59:13.166Z</lastmod>
+    <data>
+        <display>
+        <title>aapt2 生成资源 public flag 标记</title>
+        <pubTime>2018-02-02T03:54:51.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>aapt2</tag>
+         
+        <tag>资源public flag</tag>
          
          
            
@@ -542,6 +568,21 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
+    <lastmod>2018-02-02T05:59:13.121Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 区长</title>
+        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2018-02-02T05:59:13.121Z</lastmod>
     <data>
@@ -558,21 +599,6 @@
              
               <breadCrumb title="Gradle" url="https://fucknmb.com/categories/Gradle/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
-    <lastmod>2018-02-02T05:59:13.121Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 区长</title>
-        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -629,6 +655,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/05/24/CURL-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2018-02-02T05:59:13.116Z</lastmod>
+    <data>
+        <display>
+        <title>CURL NDK 交叉编译</title>
+        <pubTime>2017-05-24T11:17:06.000Z</pubTime>
+        
+        <tag>NDK</tag>
+         
+        <tag>curl</tag>
+         
+        <tag>交叉编译</tag>
+         
+         
+           
+             
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2018-02-02T05:59:13.116Z</lastmod>
     <data>
@@ -643,30 +693,6 @@
         <tag>RSA</tag>
          
         <tag>Base64</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/24/CURL-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2018-02-02T05:59:13.116Z</lastmod>
-    <data>
-        <display>
-        <title>CURL NDK 交叉编译</title>
-        <pubTime>2017-05-24T11:17:06.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>curl</tag>
-         
-        <tag>交叉编译</tag>
          
          
            
