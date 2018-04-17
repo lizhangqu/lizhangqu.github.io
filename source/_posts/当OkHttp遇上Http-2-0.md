@@ -281,10 +281,10 @@ OkHttpClient httpClient = new OkHttpClient.Builder()
             .build()
 ```
 
-3、经过测试，发现以上的无限死循环问题在okhttp [3.3.0,3.5.0]全部中招，因此可以使用3.2.0版本或者使用最新的3.10.0版本，可以从一定程度上杜绝这个问题，但是也不能保证一定不会再出现死循环，也许还有其他触发条件呢，谁也不能保证。所以升级okhttp这个成本比较低，可以考虑。
+3、经过测试，发现以上的无限死循环问题在okhttp [3.3.0,3.5.0]全部中招，因此可以使用3.2.0版本或者使用最新的3.10.0版本，可以从一定程度上杜绝这个问题，但是也不能保证一定不会再出现死循环，也许还有其他触发条件呢，谁也不能保证。所以升级okhttp是必要的，可以考虑。
 
 
-4、既然http code!=200时流未关闭的情况下，连接意外中断触发了这个死循环，那么避免问题出现的简单有效的途就是我管你http code为多少，统统关闭就好了，对应修改后的getResult函数如下:
+4、既然http code!=200时流未关闭的情况下，连接意外中断触发了这个死循环，那么避免问题出现的简单有效的途径就是我管你http code为多少，统统关闭就好了，对应修改后的getResult函数如下:
 
 ```
  public String getResult(final String url) {
@@ -318,8 +318,9 @@ OkHttpClient httpClient = new OkHttpClient.Builder()
     }
 ```
 
+但是这只是避免了流没有关闭触发的死循环，避免不了其他条件触发的死循环，需要特别注意这一点。
 
-bug修完了，还剩下一个问题待解决，150w的timeout是从哪里来的？这个问题我没办法在现有手头上的真机复现，但是我在genymotion模拟器上复现了出来，所有我猜想必然还会存在一个机型复现出这个问题，只是目前手头上的机型没有这个问题，而这个问题的前提条件也必须是Http 2.0，复现方式也是非常简单：
+bug差不多修完了，还剩下一个问题待解决，150w的timeout是从哪里来的？这个问题我没办法在现有手头上的真机复现，但是我在genymotion模拟器上复现了出来，所有我猜想必然还会存在一个机型复现出这个问题，只是目前手头上的机型没有这个问题，而这个问题的前提条件也必须是Http 2.0，复现方式也是非常简单：
 
  1、联网
  2、发送一个Http2.0请求建立连接，使用完后关闭连接（Http 2.0下会发送一个帧）
@@ -339,6 +340,7 @@ bug修完了，还剩下一个问题待解决，150w的timeout是从哪里来的
 okhttp3.Response response = null;
 try {
     response = call.execute();
+    //read response content
 } catch (SocketTimeoutException e) {
     e.printStackTrace();
     try {
@@ -350,7 +352,13 @@ try {
 } catch (IOException e) {
     throw e;
 } finally {
-   
+    if(response != null){
+        try {
+            response.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
@@ -367,6 +375,7 @@ java.net.UnknownHostException: Unable to resolve host "your.domain.com": No addr
 okhttp3.Response response = null;
 try {
     response = call.execute();
+    //read response content
 } catch (SocketTimeoutException e) {
     e.printStackTrace();
     try {
@@ -386,7 +395,13 @@ try {
 } catch (IOException e) {
     throw e;
 } finally {
-   
+    if(response != null){
+        try {
+            response.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
