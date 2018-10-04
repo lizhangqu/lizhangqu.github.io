@@ -10,6 +10,8 @@ tags: [Android, Javassist, Gradle]
 
 之所以会校验失败，是因为插件化后该动态库位于/data/data/packageName/app_plugins/pluginName/pluginVersion/lib/libgetuiext3.so目录下，不在常规目录下
 
+ <!-- more -->
+
 对应校验方法如下：
 
 ```
