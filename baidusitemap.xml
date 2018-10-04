@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://lizhangqu.github.io/2018/10/04/%E7%BB%99%E4%B8%AA%E6%8E%A8Push-SDK%E6%89%93Call/</loc>
+    <lastmod>2018-10-04T13:59:33.984Z</lastmod>
+    <data>
+        <display>
+        <title>给个推 Push SDK 打 Call</title>
+        <pubTime>2018-10-04T13:54:55.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Gradle</tag>
+         
+        <tag>Javassist</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://lizhangqu.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lizhangqu.github.io/2017/10/31/aapt2%E8%B5%84%E6%BA%90compile%E8%BF%87%E7%A8%8B/</loc>
     <lastmod>2018-10-04T12:52:40.095Z</lastmod>
     <data>
@@ -39,9 +63,9 @@
         <title>解决 CLion 报红 NDK 相关头文件</title>
         <pubTime>2018-01-24T01:39:36.000Z</pubTime>
         
-        <tag>Android</tag>
-         
         <tag>NDK</tag>
+         
+        <tag>Android</tag>
          
         <tag>Clion</tag>
          
@@ -135,37 +159,11 @@
         <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
         <pubTime>2017-07-05T01:07:10.000Z</pubTime>
         
-        <tag>Android</tag>
-         
         <tag>Debug</tag>
          
+        <tag>Android</tag>
+         
         <tag>Android Gradle Plugin</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://lizhangqu.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lizhangqu.github.io/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
-    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
-    <data>
-        <display>
-        <title>再谈 Application ProvidedAar</title>
-        <pubTime>2018-03-19T04:12:02.000Z</pubTime>
-        
-        <tag>gradle</tag>
-         
-        <tag>android</tag>
-         
-        <tag>providedAar</tag>
-         
-        <tag>maven</tag>
          
          
            
@@ -193,6 +191,32 @@
            
              
               <breadCrumb title="Mac" url="https://lizhangqu.github.io/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lizhangqu.github.io/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
+    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
+    <data>
+        <display>
+        <title>再谈 Application ProvidedAar</title>
+        <pubTime>2018-03-19T04:12:02.000Z</pubTime>
+        
+        <tag>gradle</tag>
+         
+        <tag>android</tag>
+         
+        <tag>providedAar</tag>
+         
+        <tag>maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://lizhangqu.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -552,6 +576,21 @@
 
     
   <url>
+    <loc>https://lizhangqu.github.io/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
+    <lastmod>2018-10-04T12:50:16.141Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 区长</title>
+        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lizhangqu.github.io/2017/01/12/Gradle%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%9A%84%E4%B8%80%E7%82%B9%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2018-10-04T12:50:16.141Z</lastmod>
     <data>
@@ -568,21 +607,6 @@
              
               <breadCrumb title="Gradle" url="https://lizhangqu.github.io/categories/Gradle/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lizhangqu.github.io/2017/01/12/Hello-%E5%8C%BA%E9%95%BF/</loc>
-    <lastmod>2018-10-04T12:50:16.141Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 区长</title>
-        <pubTime>2017-01-12T03:48:30.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -842,9 +866,9 @@
         <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
         <pubTime>2017-06-24T11:42:31.000Z</pubTime>
         
-        <tag>Android</tag>
-         
         <tag>NDK</tag>
+         
+        <tag>Android</tag>
          
         <tag>Android Gradle Plugin</tag>
          
