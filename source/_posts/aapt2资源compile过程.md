@@ -6,6 +6,8 @@ tags: [Android, aapt2, 资源编译]
 
 ### 前言
 
+本文基于AOSP Android 8.1分析，Android 9.0 资源proto文件格式发生了变化。
+
 从Android Studio 3.0开始，google默认开启了aapt2作为资源编译的编译器，aapt2的出现，为资源的增量编译提供了支持。当然使用过程中也会遇到一些问题，我们可以通过在**gradle.properties**中配置**android.enableAapt2=false**来关闭aapt2。
 
 <!-- more -->
@@ -287,6 +289,8 @@ message Value {
 ```
 
 以上是非values资源产生的flat文件的文件格式，**而values类型的资源，其实是以上数据格式的阉割版，即只有protobuf部分的数据结构，其结构为上面proto格式部分的ResourceTable部分**
+
+值得注意的是还有一个4字节对齐的问题，有兴趣可以查看源码。
 
 
 
