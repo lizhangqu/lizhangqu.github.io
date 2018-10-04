@@ -63,9 +63,9 @@
         <title>解决 CLion 报红 NDK 相关头文件</title>
         <pubTime>2018-01-24T01:39:36.000Z</pubTime>
         
-        <tag>NDK</tag>
-         
         <tag>Android</tag>
+         
+        <tag>NDK</tag>
          
         <tag>Clion</tag>
          
@@ -159,9 +159,9 @@
         <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
         <pubTime>2017-07-05T01:07:10.000Z</pubTime>
         
-        <tag>Debug</tag>
-         
         <tag>Android</tag>
+         
+        <tag>Debug</tag>
          
         <tag>Android Gradle Plugin</tag>
          
@@ -866,9 +866,9 @@
         <title>Android Gradle Plugin 源码解析之 externalNativeBuild</title>
         <pubTime>2017-06-24T11:42:31.000Z</pubTime>
         
-        <tag>NDK</tag>
-         
         <tag>Android</tag>
+         
+        <tag>NDK</tag>
          
         <tag>Android Gradle Plugin</tag>
          

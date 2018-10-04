@@ -103,8 +103,8 @@
         <category>Android</category>
       </categories>
       <tags>
-        <tag>NDK</tag>
         <tag>Android</tag>
+        <tag>NDK</tag>
         <tag>Clion</tag>
       </tags>
   </entry>
@@ -260,8 +260,8 @@
         <category>Android</category>
       </categories>
       <tags>
-        <tag>Debug</tag>
         <tag>Android</tag>
+        <tag>Debug</tag>
         <tag>Android Gradle Plugin</tag>
       </tags>
   </entry>
@@ -285,8 +285,8 @@
         <category>Android</category>
       </categories>
       <tags>
-        <tag>NDK</tag>
         <tag>Android</tag>
+        <tag>NDK</tag>
         <tag>Android Gradle Plugin</tag>
       </tags>
   </entry>
