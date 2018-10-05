@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2018/10/05/%E5%86%8D%E8%B0%88aapt2%E8%B5%84%E6%BA%90%E5%88%86%E5%8C%BA/</loc>
+    <lastmod>2018-10-05T04:58:41.432Z</lastmod>
+    <data>
+        <display>
+        <title>再谈 aapt2 资源分区</title>
+        <pubTime>2018-10-05T04:22:26.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>aapt2</tag>
+         
+        <tag>资源分区</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2018/10/05/%E4%B8%80%E7%A7%8D%E7%BA%AFJava%E5%B1%82%E7%BB%95%E8%BF%87Android-P%E7%A7%81%E6%9C%89%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E9%99%90%E5%88%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
     <lastmod>2018-10-05T03:56:21.803Z</lastmod>
     <data>
@@ -198,28 +222,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
-    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
-    <data>
-        <display>
-        <title>再谈 brew</title>
-        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
     <lastmod>2018-10-04T12:50:16.199Z</lastmod>
     <data>
@@ -239,6 +241,28 @@
            
              
               <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
+    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
+    <data>
+        <display>
+        <title>再谈 brew</title>
+        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
           
         </display>
     </data>
