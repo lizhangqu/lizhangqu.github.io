@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2018/12/30/art-dex2oat%E5%8A%A0%E8%BD%BD%E5%8A%A0%E9%80%9F%E6%B5%85%E6%9E%90/</loc>
+    <lastmod>2018-12-30T14:53:39.491Z</lastmod>
+    <data>
+        <display>
+        <title>art dex2oat 加载加速浅析</title>
+        <pubTime>2018-12-30T12:56:21.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>ART</tag>
+         
+        <tag>dex2oat</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2018/10/05/%E5%86%8D%E8%B0%88aapt2%E8%B5%84%E6%BA%90%E5%88%86%E5%8C%BA/</loc>
     <lastmod>2018-10-05T04:58:41.432Z</lastmod>
     <data>
@@ -222,6 +246,28 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
+    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
+    <data>
+        <display>
+        <title>再谈 brew</title>
+        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
     <lastmod>2018-10-04T12:50:16.199Z</lastmod>
     <data>
@@ -241,28 +287,6 @@
            
              
               <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/08/16/%E5%86%8D%E8%B0%88brew/</loc>
-    <lastmod>2018-10-04T12:50:16.199Z</lastmod>
-    <data>
-        <display>
-        <title>再谈 brew</title>
-        <pubTime>2017-08-16T08:29:01.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
           
         </display>
     </data>
