@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2019/03/21/Flutter-Tools-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95/</loc>
+    <lastmod>2019-03-21T08:16:58.800Z</lastmod>
+    <data>
+        <display>
+        <title>Flutter Tools 断点调试</title>
+        <pubTime>2019-03-21T06:49:23.000Z</pubTime>
+        
+        <tag>flutter</tag>
+         
+        <tag>debugger</tag>
+         
+        <tag>breakpoint</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://fucknmb.com/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2019/02/26/Flutter-Engine-%E7%BC%96%E8%AF%91%E6%8C%87%E5%8C%97/</loc>
     <lastmod>2019-02-28T13:26:34.123Z</lastmod>
     <data>
@@ -953,28 +977,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/11/06/Android-FileChannel%E7%9A%84%E5%9D%91/</loc>
-    <lastmod>2018-12-30T14:57:32.634Z</lastmod>
-    <data>
-        <display>
-        <title>Android FileChannel 的坑</title>
-        <pubTime>2017-11-06T06:12:17.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>FileChannel</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/06/24/Android-Gradle-Plugin%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8BexternalNativeBuild/</loc>
     <lastmod>2018-12-30T14:57:32.634Z</lastmod>
     <data>
@@ -987,6 +989,28 @@
         <tag>NDK</tag>
          
         <tag>Android Gradle Plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/11/06/Android-FileChannel%E7%9A%84%E5%9D%91/</loc>
+    <lastmod>2018-12-30T14:57:32.634Z</lastmod>
+    <data>
+        <display>
+        <title>Android FileChannel 的坑</title>
+        <pubTime>2017-11-06T06:12:17.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>FileChannel</tag>
          
          
            
