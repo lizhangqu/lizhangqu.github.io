@@ -258,6 +258,195 @@ Flurry是国外一家专门为移动应用提供数据统计和分析的公司�
 前面说到，Target>=9.0时，在Android Q上，实际上org.apache.http.legacy.boot.jar中的类是由另一个PathClassLoader加载，而不是App的PathClassLoader，但是他们的parent都是BootClassLoader，所以正常来说，在Android Q上，类查找逻辑还是需要再进行一番变化，具体可以等Android Q release后再看下。
 
 
+### apache httpclient 类检测
+
+所以杜绝此类问题的根本解决方法是不用热修复，不用插件化，这显然短期内是不可能的，虽然我们支持零成本降级插件化为aar进行集成，但是考虑到动态性，目前还是会继续使用。所以退而求其次的方法就是移除apache httpclient的类调用，所以必须检测出哪些SDK使用了apache httpclient中的类，这里用gradle插件结合javassist写了个插件，有兴趣可以见 [https://github.com/lizhangqu/plugin-apache-httpclient-detect](https://github.com/lizhangqu/plugin-apache-httpclient-detect)
+
+核心代码如下
+
+```
+private Map<String, ClassPool> classPoolMap = new HashMap<>()
+private ClassPool apacheLegacyClassPool
+@Override
+void accept(String variantName, String path, InputStream inputStream, OutputStream outputStream) {
+    ClassPool classPool = classPoolMap.get(variantName)
+    if (classPool == null) {
+        classPool = new ClassPool(true)
+        TransformHelper.updateClassPath(classPool, project, variantName)
+        classPoolMap.put(variantName, classPool)
+    }
+
+    if (apacheLegacyClassPool == null) {
+        File apacheJarFile = getApacheLegacyJarFile()
+        project.logger.info("insertClassPath org.apache.http.legacy.jar ${apacheJarFile}")
+        if (apacheJarFile != null) {
+            apacheLegacyClassPool = new ClassPool()
+            apacheLegacyClassPool.insertClassPath(apacheJarFile.getAbsolutePath())
+        }
+    }
+
+    if (apacheLegacyClassPool == null) {
+        return
+    }
+
+    CtClass ctClass = classPool.makeClass(inputStream, false)
+    if (ctClass.isFrozen()) {
+        ctClass.defrost()
+    }
+
+    detect(path, ctClass)
+
+    TransformHelper.copy(new ByteArrayInputStream(ctClass.toBytecode()), outputStream)
+}
+
+@SuppressWarnings("GrMethodMayBeStatic")
+File getApacheLegacyJarFile() {
+    String jarPath = "jar/org.apache.http.legacy.jar"
+    try {
+        //对应路径如果存在，则直接返回
+        URL url = ApacheHttpClientDetectPlugin.class.getClassLoader().getResource(jarPath)
+        if (url != null) {
+            File apacheJarFile = new File(url.getFile())
+            if (apacheJarFile.isFile() && apacheJarFile.exists()) {
+                return apacheJarFile
+            }
+            //取jar包中的文件
+            URL jarUrl = ApacheHttpClientDetectPlugin.class.getProtectionDomain().getCodeSource().getLocation()
+            if (jarUrl != null) {
+                File jarFile = new File(jarUrl.getFile())
+                File jarFolder = new File(jarFile.getParentFile(),
+                        FilenameUtils.getBaseName(jarFile.getName()))
+                GFileUtils.mkdirs(jarFolder)
+                apacheJarFile = new File(jarFolder, "org.apache.http.legacy.jar")
+                GFileUtils.mkdirs(apacheJarFile.getParentFile())
+                if (apacheJarFile.isFile() && apacheJarFile.exists()) {
+                    return apacheJarFile
+                }
+                //否则解压
+                ZipUtil.unpackEntry(jarFile, jarPath, apacheJarFile)
+                return apacheJarFile
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace()
+    }
+    return null
+}
+
+@SuppressWarnings("GrMethodMayBeStatic")
+boolean isApacheLegacy(String name) {
+    if (name == null) {
+        return false
+    }
+    if (name.startsWith('org.apache.http.')) {
+        return true
+    }
+    if (name.startsWith('org.apache.commons.codec')) {
+        return true
+    }
+    if (name.startsWith('org.apache.commons.logging')) {
+        return true
+    }
+    if (name.startsWith('com.android.internal.http.multipart')) {
+        return true
+    }
+    if (name.startsWith('android.net.compatibility')) {
+        return true
+    }
+    if (name.startsWith('android.net.http')) {
+        if (name.startsWith('android.net.http.HttpResponseCache')) {
+            return false
+        }
+        if (name.startsWith('android.net.http.SslCertificate')) {
+            return false
+        }
+        if (name.startsWith('android.net.http.SslError')) {
+            return false
+        }
+        if (name.startsWith('android.net.http.X509TrustManagerExtensions')) {
+            return false
+        }
+        return true
+    }
+    return false
+}
+
+void detect(String path, CtClass ctClass) {
+	try {
+	    ctClass?.getRefClasses()?.each { String name ->
+	        if (!isApacheLegacy(name)) {
+	            return
+	        }
+	        if (apacheLegacyClassPool?.getOrNull(name) != null) {
+	            project.logger.error("----------------------------------------Class Reference Start----------------------------------------")
+	            project.logger.error("Apache HttpClient Class Reference: ")
+	            project.logger.error("        └> [Class: ${name}]")
+	            project.logger.error("        └> [Referenced By Class: ${path.replaceAll('/', '.')}]")
+	            project.logger.error("----------------------------------------Class Reference End------------------------------------------\n\n")
+	        }
+	    }
+	 	ctClass?.getDeclaredFields()?.each { CtField ctField ->
+		    CtClass fieldClass = null
+		    try {
+		        fieldClass = ctField.getType()
+		    } catch (NotFoundException e) {
+
+		    }
+		    if (fieldClass == null) {
+		        return
+		    }
+		    if (!isApacheLegacy(fieldClass.getName())) {
+		        return
+		    }
+		    if (fieldClass.isPrimitive()) {
+		        return
+		    }
+		    if (fieldClass.isArray() && fieldClass.getComponentType().isPrimitive()) {
+		        return
+		    }
+		    if (apacheLegacyClassPool?.getOrNull(fieldClass.getName()) != null) {
+		        project.logger.error("----------------------------------------Field Reference Start----------------------------------------")
+		        project.logger.error("Apache HttpClient Field Reference: ")
+		        project.logger.error("        └> [Class: ${fieldClass.getName()}]")
+		        project.logger.error("        └> [Filed: ${ctField.getName()}]")
+		        project.logger.error("        └> [Referenced By Class: ${path.replaceAll('/', '.')}]")
+		        project.logger.error("----------------------------------------Field Reference End------------------------------------------\n\n")
+		    }
+		}
+    	ctClass?.getDeclaredMethods()?.each {
+	        it.instrument(new ExprEditor() {
+	            @Override
+	            void edit(MethodCall methodCall) throws CannotCompileException {
+	                super.edit(methodCall)
+	                if (!isApacheLegacy(methodCall.className)) {
+	                    return
+	                }
+	                CtClass clazz = apacheLegacyClassPool?.getOrNull(methodCall.className)
+	                if (clazz == null) {
+	                    return
+	                }
+	                if (clazz.isPrimitive()) {
+	                    return
+	                }
+	                if (clazz.isArray() && clazz.getComponentType().isPrimitive()) {
+	                    return
+	                }
+	                project.logger.error("----------------------------------------Method Reference Start----------------------------------------")
+	                project.logger.error("Apache HttpClient Method Reference: ")
+	                project.logger.error("        └> [Class: ${methodCall.getClassName()}]")
+	                project.logger.error("        └> [Method: ${methodCall.getMethodName()}${methodCall.getSignature()}]")
+	                project.logger.error("        └> [Referenced By Class: ${path.replaceAll('/', '.')}, Line: ${methodCall.getLineNumber()}]")
+	                project.logger.error("----------------------------------------Method Reference End------------------------------------------\n\n")
+	            }
+	        })
+    	}
+	} catch (Exception e) {
+    	e.printStackTrace()
+	}
+}
+```
+
+
 ### 总结
 
 珍爱生命，远离插件化，远离热修复。
