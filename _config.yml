@@ -114,4 +114,4 @@ backup:
     type: git
     message: update from hexo backup plugin
     repository:
-       github: git@github.com:lizhangqu/lizhangqu.github.io.git,hexo
+       origin: git@github.com:lizhangqu/lizhangqu.github.io.git,hexo
