@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2019/05/28/R8-%E8%B8%A9%E5%9D%91%E8%AE%B0/</loc>
-    <lastmod>2019-05-29T01:04:53.289Z</lastmod>
+    <lastmod>2019-05-29T06:26:06.832Z</lastmod>
     <data>
         <display>
         <title>R8 踩坑记</title>
@@ -550,28 +550,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2019-04-04T03:49:30.993Z</lastmod>
-    <data>
-        <display>
-        <title>Tensorflow Lite 编译</title>
-        <pubTime>2017-11-17T01:58:17.000Z</pubTime>
-        
-        <tag>TensorFlow</tag>
-         
-        <tag>TensorFlow Lite，Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/06/22/NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F/</loc>
     <lastmod>2019-04-04T03:49:30.993Z</lastmod>
     <data>
@@ -613,6 +591,28 @@
            
              
               <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2019-04-04T03:49:30.993Z</lastmod>
+    <data>
+        <display>
+        <title>Tensorflow Lite 编译</title>
+        <pubTime>2017-11-17T01:58:17.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>TensorFlow Lite，Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
           
         </display>
     </data>
@@ -927,6 +927,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
+    <lastmod>2019-04-04T03:49:30.911Z</lastmod>
+    <data>
+        <display>
+        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
+        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>HttpUrlConnection</tag>
+         
+        <tag>URLStreamHandlerFactory</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2017/12/24/Android-application%E4%B8%AD%E4%BD%BF%E7%94%A8provided-aar%E5%B9%B6%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95/</loc>
     <lastmod>2019-04-04T03:49:30.911Z</lastmod>
     <data>
@@ -941,30 +965,6 @@
         <tag>providedAar</tag>
          
         <tag>maven</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
-    <lastmod>2019-04-04T03:49:30.911Z</lastmod>
-    <data>
-        <display>
-        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
-        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>HttpUrlConnection</tag>
-         
-        <tag>URLStreamHandlerFactory</tag>
          
          
            
