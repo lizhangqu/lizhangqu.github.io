@@ -270,7 +270,7 @@ io.github.lizhangqu:library:1.0.0-SNAPSHOT:20190628.005304-2
 
 由于是增量构建，所以上一次构建产生的\_\_content\_\_.json文件存在，会进行反序列化，由于之前产生了两个文件，所以此时如果index会从2开始递增。再加上FirstTransform是第一个transform并且产生了一个新增的依赖，即B的aar依赖，此时B的aar依赖getName()返回的是该依赖的maven坐标显示值；同时移除了一个旧的依赖，即B的project依赖，其getName()返回的是B工程的project path名。此时FirstTransform会强制触发全量编译，但是此时新增的aar依赖通过getContentLocation返回的就是first/2.jar，而不再是first/0.jar或者first/1，因为缓存中并没有B的aar依赖对应的SubStream，所以文件名进行了递增操作。假如B的project依赖之前产生的是first/0.jar，那么此时FirstTransform会产生两个输出文件，即first/1和first/2.jar，而first/0.jar由于是全量构建，会被删除。
 
-当执行到SecondTransform的时候，也会有一个新增文件和一个删除文件，即first/2.jar是新增文件，first/0.jar是删除文件，对应的由于该transform上一次构建产生的\_\_content\_\_.json文件存在，会进行反序列化，所以此时index会从2开始地址。因此新增文件first/2.jar获取到的输出文件为second/2.jar，因为first/2.jar对应B模块的aar依赖，其getName()返回的是其maven坐标显示值，没有缓存的SubStream与其匹配，所以命名规则进行了递增，即second/2.jar，而删除文件first/0.jar获取到的输出文件为second/0.jar是因为有已存在的SubStream与其匹配，返回其原先的文件名，该文件由于被标记成删除，所以会被我们删掉。
+当执行到SecondTransform的时候，也会有一个新增文件和一个删除文件，即first/2.jar是新增文件，first/0.jar是删除文件，对应的由于该transform上一次构建产生的\_\_content\_\_.json文件存在，会进行反序列化，所以此时index会从2开始递增。因此新增文件first/2.jar获取到的输出文件为second/2.jar，因为first/2.jar对应B模块的aar依赖，其getName()返回的是其maven坐标显示值，没有缓存的SubStream与其匹配，所以命名规则进行了递增，即second/2.jar，而删除文件first/0.jar获取到的输出文件为second/0.jar是因为有已存在的SubStream与其匹配，返回其原先的文件名，该文件由于被标记成删除，所以会被我们删掉。
 
 可能比较抽象，我们贴一下输出日志会比较好理解
 
@@ -655,6 +655,63 @@ apply plugin: 'agp-transform-patch'
 
 如果不生效，不妨试试将守护进程杀掉！！！
 
+### 柳暗花明
+
+或许你觉得上面的方式有点重，不想hook classloader，那么有没有其他修复方式呢？爱奇艺的同学提供了一种比较简单的方式，在\_\_content\_\_.json文件被删除前，将其进行反序列化。\_\_content\_\_.json是在asOutput函数中init之前被删除，如下
+
+```
+TransformOutputProvider asOutput(boolean isIncremental) throws IOException {
+    if (!isIncremental) {
+        FileUtils.deleteIfExists(new File(getRootLocation(), SubStream.FN_FOLDER_CONTENT));
+    }
+    init();
+    return new TransformOutputProviderImpl(folderUtils);
+}
+```
+
+我们只需要在delete前，提前调用init函数进行反序列化即可，那么什么时机合适呢？就是task执行前
+
+```
+/**
+ * 通过提前初始化，在__content__.json文件被删除前进行反序列化，达到修复目的
+ */
+public class AGPTransformPatchByPreInitPlugin implements Plugin<Project> {
+
+    @Override
+    final void apply(Project project) {
+        if (AGPTransformPatch.shouldApplyPatch()) {
+            project.gradle.addListener(new TaskExecutionListener() {
+                @Override
+                void beforeExecute(Task task) {
+                    //不是当前project不提前初始化
+                    if (task.getProject() != project) {
+                        return
+                    }
+                    //noinspection GroovyAccessibility
+                    if (task instanceof TransformTask && task.outputStream != null) {
+                        //noinspection GroovyAccessibility
+                        task.outputStream.init()
+                    }
+                }
+
+                @Override
+                void afterExecute(Task task, TaskState taskState) {
+
+                }
+            })
+        }
+    }
+}
+
+```
+
+简单的几句代码也可以达到修复作用，而且比较轻量，仅仅是调用了一个protected访问符的outputStream的init函数。
+
+在对应模块中应用该插件
+
+```
+apply plugin: 'agp-transform-patch-by-pre-init'
+```
 
 ### 开箱即用
 
@@ -669,7 +726,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath('io.github.lizhangqu:plugin-agp-transform-patch:1.0.3')
+        classpath('io.github.lizhangqu:plugin-agp-transform-patch:1.0.4')
     }
 }
 ```
@@ -680,12 +737,17 @@ buildscript {
 apply plugin: 'agp-transform-patch'
 ```
 
+或者使用提前初始化修复方式的插件
+
+```
+apply plugin: 'agp-transform-patch-by-pre-init'
+```
 
 如果工程目录中有buildSrc模块，请不要使用如上的buildscript方式，而是将依赖添加到buildSrc工程的依赖中
 
 ```
 dependencies {
-    compile('io.github.lizhangqu:plugin-agp-transform-patch:1.0.3') {
+    compile('io.github.lizhangqu:plugin-agp-transform-patch:1.0.4') {
         changing = true
     }
     compile "com.android.tools.build:gradle:3.2.1"
@@ -696,6 +758,12 @@ dependencies {
 
 ```
 apply plugin: 'agp-transform-patch'
+```
+
+或者使用提前初始化修复方式的插件
+
+```
+apply plugin: 'agp-transform-patch-by-pre-init'
 ```
 
 重要的事情再说一遍，如果不生效，请将守护进程杀掉，因为守护进程中该类已经被加载，插入patch后由于缓存的存在，还是使用的原来的类。
