@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://fucknmb.com/2019/06/28/%E6%B2%BB%E6%B2%BB%E8%BF%99%E4%B8%AAgoogle%E4%B8%80%E5%B9%B4%E6%B2%A1%E4%BF%AE%E7%9A%84agp-transform-bug/</loc>
-    <lastmod>2019-06-28T09:07:28.333Z</lastmod>
+    <lastmod>2019-06-28T12:18:22.620Z</lastmod>
     <data>
         <display>
         <title>治治这个 google 一年没修的 agp transform bug</title>
@@ -644,28 +644,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
-    <lastmod>2019-04-04T03:49:30.992Z</lastmod>
-    <data>
-        <display>
-        <title>IntelliJ IDEA 远程调试</title>
-        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
-        
-        <tag>IDEA</tag>
-         
-        <tag>远程调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/08/18/Mac%E7%94%9F%E6%88%90Linux%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE/</loc>
     <lastmod>2019-04-04T03:49:30.992Z</lastmod>
     <data>
@@ -683,6 +661,28 @@
            
              
               <breadCrumb title="Mac" url="https://fucknmb.com/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/04/07/Intellij-IDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/</loc>
+    <lastmod>2019-04-04T03:49:30.992Z</lastmod>
+    <data>
+        <display>
+        <title>IntelliJ IDEA 远程调试</title>
+        <pubTime>2017-04-07T14:09:34.000Z</pubTime>
+        
+        <tag>IDEA</tag>
+         
+        <tag>远程调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDEA" url="https://fucknmb.com/categories/IDEA/"/>
           
         </display>
     </data>
