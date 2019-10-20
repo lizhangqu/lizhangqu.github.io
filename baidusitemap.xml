@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2019/10/20/%E8%8E%B7%E5%8F%96%E5%B9%B6%E8%BF%98%E5%8E%9FFlutter-Engine-Crash%E5%A0%86%E6%A0%88/</loc>
+    <lastmod>2019-10-20T01:31:06.505Z</lastmod>
+    <data>
+        <display>
+        <title>获取并还原 Flutter Engine Crash 堆栈</title>
+        <pubTime>2019-10-20T00:32:27.000Z</pubTime>
+        
+        <tag>Flutter</tag>
+         
+        <tag>Crash</tag>
+         
+        <tag>Backtrace</tag>
+         
+        <tag>Stacktrace</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://fucknmb.com/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2019/06/28/%E6%B2%BB%E6%B2%BB%E8%BF%99%E4%B8%AAgoogle%E4%B8%80%E5%B9%B4%E6%B2%A1%E4%BF%AE%E7%9A%84agp-transform-bug/</loc>
     <lastmod>2019-06-28T23:04:23.668Z</lastmod>
     <data>
@@ -174,6 +200,30 @@
 
     
   <url>
+    <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2019-06-28T13:15:31.740Z</lastmod>
+    <data>
+        <display>
+        <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
+        <pubTime>2017-07-05T01:07:10.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>Debug</tag>
+         
+        <tag>Android Gradle Plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fucknmb.com/2018/10/05/%E5%86%8D%E8%B0%88aapt2%E8%B5%84%E6%BA%90%E5%88%86%E5%8C%BA/</loc>
     <lastmod>2019-06-28T13:15:31.740Z</lastmod>
     <data>
@@ -220,18 +270,20 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/05/%E5%8F%88%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%B8%80%E9%A1%B9%E6%96%B0%E6%8A%80%E8%83%BD-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Gradle%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2019-06-28T13:15:31.740Z</lastmod>
+    <loc>https://fucknmb.com/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
+    <lastmod>2019-06-28T13:15:31.739Z</lastmod>
     <data>
         <display>
-        <title>又掌握了一项新技能 - 断点调试 Gradle 插件</title>
-        <pubTime>2017-07-05T01:07:10.000Z</pubTime>
+        <title>再谈 Application ProvidedAar</title>
+        <pubTime>2018-03-19T04:12:02.000Z</pubTime>
         
-        <tag>Android</tag>
+        <tag>gradle</tag>
          
-        <tag>Debug</tag>
+        <tag>android</tag>
          
-        <tag>Android Gradle Plugin</tag>
+        <tag>providedAar</tag>
+         
+        <tag>maven</tag>
          
          
            
@@ -266,20 +318,16 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2018/03/19/%E5%86%8D%E8%B0%88Application-ProvidedAar/</loc>
-    <lastmod>2019-06-28T13:15:31.739Z</lastmod>
+    <loc>https://fucknmb.com/2018/04/16/%E4%B8%80%E7%A7%8D%E5%85%A8%E5%B1%80%E6%8B%A6%E6%88%AA%E5%B9%B6%E7%9B%91%E6%8E%A7DNS%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2019-06-28T13:15:31.738Z</lastmod>
     <data>
         <display>
-        <title>再谈 Application ProvidedAar</title>
-        <pubTime>2018-03-19T04:12:02.000Z</pubTime>
+        <title>一种全局拦截并监控 DNS 的方式</title>
+        <pubTime>2018-04-16T09:01:31.000Z</pubTime>
         
-        <tag>gradle</tag>
+        <tag>Android</tag>
          
-        <tag>android</tag>
-         
-        <tag>providedAar</tag>
-         
-        <tag>maven</tag>
+        <tag>DNS</tag>
          
          
            
@@ -316,21 +364,23 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2018/04/16/%E4%B8%80%E7%A7%8D%E5%85%A8%E5%B1%80%E6%8B%A6%E6%88%AA%E5%B9%B6%E7%9B%91%E6%8E%A7DNS%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2019-06-28T13:15:31.738Z</lastmod>
+    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2019-06-28T13:15:31.737Z</lastmod>
     <data>
         <display>
-        <title>一种全局拦截并监控 DNS 的方式</title>
-        <pubTime>2018-04-16T09:01:31.000Z</pubTime>
+        <title>openssl NDK 交叉编译</title>
+        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
         
-        <tag>Android</tag>
+        <tag>NDK</tag>
          
-        <tag>DNS</tag>
+        <tag>交叉编译</tag>
+         
+        <tag>openssl</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
+              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
           
         </display>
     </data>
@@ -350,30 +400,6 @@
         <tag>交叉编译</tag>
          
         <tag>libuv</tag>
-         
-         
-           
-             
-              <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://fucknmb.com/2017/05/24/openssl-NDK%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2019-06-28T13:15:31.737Z</lastmod>
-    <data>
-        <display>
-        <title>openssl NDK 交叉编译</title>
-        <pubTime>2017-05-24T10:39:31.000Z</pubTime>
-        
-        <tag>NDK</tag>
-         
-        <tag>交叉编译</tag>
-         
-        <tag>openssl</tag>
          
          
            
@@ -550,28 +576,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2019-06-28T13:15:31.703Z</lastmod>
-    <data>
-        <display>
-        <title>Tensorflow Lite 编译</title>
-        <pubTime>2017-11-17T01:58:17.000Z</pubTime>
-        
-        <tag>TensorFlow</tag>
-         
-        <tag>TensorFlow Lite，Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/12/18/Ubuntu%E4%BD%BF%E7%94%A8ming-w64%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2019-06-28T13:15:31.703Z</lastmod>
     <data>
@@ -615,6 +619,28 @@
            
              
               <breadCrumb title="R8" url="https://fucknmb.com/categories/R8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/11/17/Tensorflow-Lite%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2019-06-28T13:15:31.703Z</lastmod>
+    <data>
+        <display>
+        <title>Tensorflow Lite 编译</title>
+        <pubTime>2017-11-17T01:58:17.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>TensorFlow Lite，Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="TensorFlow" url="https://fucknmb.com/categories/TensorFlow/"/>
           
         </display>
     </data>
@@ -925,30 +951,6 @@
 
     
   <url>
-    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
-    <lastmod>2019-06-28T13:15:31.648Z</lastmod>
-    <data>
-        <display>
-        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
-        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>HttpUrlConnection</tag>
-         
-        <tag>URLStreamHandlerFactory</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://fucknmb.com/2017/04/09/Android%E5%9C%A8NDK%E5%B1%82%E4%BD%BF%E7%94%A8OpenSSL%E8%BF%9B%E8%A1%8CRSA%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2019-06-28T13:15:31.648Z</lastmod>
     <data>
@@ -968,6 +970,30 @@
            
              
               <breadCrumb title="NDK" url="https://fucknmb.com/categories/NDK/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fucknmb.com/2017/07/13/Android%E4%BB%A3%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BA%A7HttpUrlConnection%E8%AF%B7%E6%B1%82%E5%88%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BD%91%E7%BB%9C%E5%BA%93-%E6%94%AF%E6%8C%81Http-2-0%E5%8F%8AHttpDNS/</loc>
+    <lastmod>2019-06-28T13:15:31.648Z</lastmod>
+    <data>
+        <display>
+        <title>Android 代理系统级 HttpUrlConnection 请求到第三方网络库 - 支持 Http/2.0 及 HttpDNS</title>
+        <pubTime>2017-07-13T08:47:12.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>HttpUrlConnection</tag>
+         
+        <tag>URLStreamHandlerFactory</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://fucknmb.com/categories/Android/"/>
           
         </display>
     </data>
