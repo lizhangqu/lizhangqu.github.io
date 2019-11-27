@@ -139,11 +139,26 @@ solutions = [
 ]
 ```
 
+如果想指定flutter engine revision，则可以配置url加入@revision，如检出v1.9.1的engine版本
+
+```
+solutions = [
+  {
+    "managed": False,
+    "name": "src/flutter",
+    "url": "git@github.com:flutter/engine.git@b863200c37df4ed378042de11c4e9ff34e4e58c9",
+    "custom_deps": {},
+    "deps_file": "DEPS",
+    "safesync_url": "",
+  },
+]
+```
+
 然后在engine目录下执行源码同步操作
 
 ```
 cd /path/to/engine
-gclient sync
+gclient sync --verbose
 ```
 
 如果源码同步过程中速度很慢或者出现了一些异常，基本就是代理配置存在问题，请认真检查代理是否配置正确。
@@ -215,7 +230,7 @@ cat /path/to/currentFlutter/bin/internal/engine.version
 ```
 cd /path/to/engine/src/flutter
 git reset --hard 7375a0f414bde4bc941e623482221db2fc8c4ab5
-gclient sync --with_branch_heads --with_tags  
+gclient sync --with_branch_heads --with_tags --verbose
 ```
 
 之后即可进行编译。
