@@ -1,4 +1,4 @@
-title: Flutter Engine 编译指南
+title: Flutter Engine 编译指北
 date: 2019-02-26 17:29:51
 categories: [Flutter]
 tags: [flutter, engine, compile]
@@ -219,22 +219,6 @@ gclient sync --with_branch_heads --with_tags
 ```
 
 之后即可进行编译。
-
-
-也可以一开始直接通过修改.gclient的配置达到目的，如检出v1.9.1的engine版本
-
-```
-solutions = [
-  {
-    "managed": False,
-    "name": "src/flutter",
-    "url": "git@github.com:flutter/engine.git@b863200c37df4ed378042de11c4e9ff34e4e58c9",
-    "custom_deps": {},
-    "deps_file": "DEPS",
-    "safesync_url": "",
-  },
-]
-```
 
 
 ##### Xcode 32位支持
