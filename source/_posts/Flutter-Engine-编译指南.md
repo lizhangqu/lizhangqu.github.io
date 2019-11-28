@@ -154,6 +154,29 @@ solutions = [
 ]
 ```
 
+如果想覆盖特定的依赖，可在custom_deps中重写，比如我想覆盖buildroot，从`git@github.com:flutter/engine.git`工程中的DEPS文件中可以找到buildroot对应的释放路径为src
+
+```
+'src': 'https://github.com/flutter/buildroot.git' + '@' + '5a33d6ab06fa2cc94cdd864ff238d2c58d6b7e4e',
+```
+
+因此我们只需要覆盖src的dep即可完成buildroot的覆盖，如
+
+```
+solutions = [
+  {
+    "managed": False,
+    "name": "src/flutter",
+    "url": "git@github.com:flutter/engine.git@b863200c37df4ed378042de11c4e9ff34e4e58c9",
+    "custom_deps": {
+        "src":"https://github.com/flutter/buildroot.git@fa860b64553b54bbd715ebd2145523a4999a3b3a"
+    },
+    "deps_file": "DEPS",
+    "safesync_url": "",
+  },
+]
+```
+
 然后在engine目录下执行源码同步操作
 
 ```
