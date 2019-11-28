@@ -531,7 +531,7 @@ export FLUTTER_ENGINE=/path/to/engine/src
 
 执行./flutter/tools/gn生成src/out目录后，会在src/out目录生成compile_commands.json文件，执行ninja完成构建后，可将compile_commands.json拷贝到src/compile_commands.json（或者src/flutter/compile_commands.json），然后使用Clion直接打开src目录(或者src/flutter目录)即可，Clion可以识别到compile_commands.json文件，并完成源码跳转。
 
-除了Clion之外，你也可以直接用Xcode打开./flutter/tools/gn执行后生成的目录，如out/ios_debug_sim_unopt，里面会有Xcode需要的工程文件。
+除了Clion之外，你也可以直接用Xcode打开./flutter/tools/gn执行后生成的目录，如src/out/ios_debug_sim_unopt，里面会有Xcode需要的工程文件，从而完成源码跳转。
 
 ##### Android armeabi支持
 
