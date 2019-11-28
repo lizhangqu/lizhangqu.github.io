@@ -527,6 +527,12 @@ export FLUTTER_ENGINE=/path/to/engine/src
 
 根据提示可以看出，这是因为debug的产物不能用于release构建，请切换成release的产物后再构建。
 
+##### IDEA 支持
+
+执行./flutter/tools/gn生成src/out目录后，会在src/out目录生成compile_commands.json文件，执行ninja完成构建后，可将compile_commands.json拷贝到src/compile_commands.json（或者src/flutter/compile_commands.json），然后使用Clion直接打开src目录(或者src/flutter目录)即可，Clion可以识别到compile_commands.json文件，并完成源码跳转。
+
+除了Clion之外，你也可以直接用Xcode打开./flutter/tools/gn执行后生成的目录，如out/ios_debug_sim_unopt，里面会有Xcode需要的工程文件。
+
 ##### Android armeabi支持
 
 默认情况下，如果指定\-\-android-cpu=arm的话，编译出来的引擎是只支持armeabi-v7a的，并不会产出armeabi的产物，这是因为Flutter依赖的一些library只支持armeabi，所以Flutter只能支持armeabi-v7a，这其实也是合理的。而在ndk16中，Google也废弃对armeabi、mips、mips64的支持。种种迹象都说明Google不建议我们再使用armeabi，而是使用armeabi-v7a。并且根据统计，市面上也基本没有armeabi的设备了，所以我们使用armeabi-v7a是完全没有问题的。
