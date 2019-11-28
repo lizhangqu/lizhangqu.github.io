@@ -527,7 +527,7 @@ export FLUTTER_ENGINE=/path/to/engine/src
 
 根据提示可以看出，这是因为debug的产物不能用于release构建，请切换成release的产物后再构建。
 
-##### IDEA 支持
+##### IDE 支持
 
 执行./flutter/tools/gn生成src/out目录后，会在src/out目录生成compile_commands.json文件，执行ninja完成构建后，可将compile_commands.json拷贝到src/compile_commands.json（或者src/flutter/compile_commands.json），然后使用Clion直接打开src目录(或者src/flutter目录)即可，Clion可以识别到compile_commands.json文件，并完成源码跳转。
 
@@ -724,6 +724,28 @@ buildscript {
 
 apply plugin: 'flutter.armeabi'
 ```
+
+### Flutter Framework开发环境
+
+有时候除了需要编译Flutter Engine，你可能还需要修改dart部分，即Flutter Framework，比起Flutter Engine，Flutter Framework的编译比较简单，首先需要clone一份源码
+
+```
+git clone https://github.com/flutter/flutter.git flutter_framework
+```
+
+然后执行包更新获取Flutter所依赖的Dart依赖
+
+```
+cd /path/to/flutter_framework
+./bin/flutter update-packages
+cd /path/to/flutter_framework/packages/flutter
+../../bin/flutter doctor
+../../bin/flutter packages get
+```
+
+之后使用IDE直接打开工程即可，这里官方推荐使用Android Studio，也可以使用Intellij IDEA(装有Flutter插件)，注意这里打开的目录为/path/to/flutter_framework/packages/flutter，这个目录下的文件是我们runtime所需要的dart文件，如果你要进行定制或者bugfix，可修改该文件夹下的文件，从而完成定制。
+
+定制完成后，如果你需要使用自己的Flutter Framework，注意完成修改后，请务必在你修改的分支上打上TAG，避免一些不必要的坑，TAG这里是有要求的，一般是v开头，跟着三位数的版本号，如v1.9.1，但是如果是hotfix版本，则会跟着hotfix的版本号，如v1.9.1+hotfix.4，不是这两种格式的TAG，Flutter会无法识别到，因此自己打的TAG可以在原始TAG后追加4位数，如v1.9.10001，如果是hotfix版本，就是v1.9.1+hotfix.40001，末尾四位数表示我们修改过的版本，每次修改数字进行递增即可。
 
 
 ### 总结
