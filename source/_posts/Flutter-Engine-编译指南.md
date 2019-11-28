@@ -154,7 +154,7 @@ solutions = [
 ]
 ```
 
-如果想覆盖特定的依赖，可在custom_deps中重写，比如我想覆盖buildroot，从`git@github.com:flutter/engine.git`工程中的DEPS文件中可以找到buildroot对应的释放路径为src
+如果想覆盖特定的依赖，可在custom_deps中重写，比如我想覆盖buildroot，从*git@github.com:flutter/engine.git*工程中的DEPS文件中可以找到buildroot对应的释放路径为src
 
 ```
 'src': 'https://github.com/flutter/buildroot.git' + '@' + '5a33d6ab06fa2cc94cdd864ff238d2c58d6b7e4e',
