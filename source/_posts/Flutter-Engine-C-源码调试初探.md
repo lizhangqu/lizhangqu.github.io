@@ -296,7 +296,7 @@ settings set target.source-map /Users/lizhangqu/software/flutter_dev/engine/src/
 将out/android_debug_unopt目录映射到src目录，其实是无效的，因为我们的源码目录本来就是src，已经不需要映射了。
 
 
-如果你基于google编译的产物，然后本地调试，那么这一步是必须的。target.source-map后面第一个目录为build目录，第二个目录为源码目录
+如果你基于其他人编译的产物，然后本地调试，那么这一步是必须的。target.source-map后面第一个目录为build目录，第二个目录为源码目录
 
 到这里，恭喜你，你已经学会了LLDB在终端中的调试。什么？嫌麻烦！不要急，好东西来了。[此处为人肉防盗文, 原文出处 https://fucknmb.com](https://fucknmb.com)
 
@@ -371,7 +371,7 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved) {
 
 重新编译引擎，重新编译apk运行，这时候打开flutter界面，如果你的sdcard目录下存在lldb.debug文件，并且是debug模式运行的flutter，那么程序就会进行暂停，这时候我们使用lldb进行连接，然后使用add-dsym命令添加符号表，就会顺利的添加，之后设置断点后执行`continue`让程序继续运行。我们满足了add-dsym命令在libflutter.so被加载后调用，所以add-dsym也就被顺利的调用了。
 
-显然这不是理想的方式，因为需要重新编译代码，对于google编译的flutter引擎就无能为力，所以必然有一种更优的方式。
+显然这不是理想的方式，因为需要重新编译代码，对于其他人编译的flutter引擎就无能为力，所以必然有一种更优的方式。
 
 那么Android Studio是怎么做到Native代码等待调试器的呢？好奇心让我去找`Android NDK Support`插件的源码，找了一圈发现根本找不到。对于此，Google官方的回复如下：
 
