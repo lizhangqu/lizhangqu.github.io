@@ -143,11 +143,8 @@ font:
   #LinkLabel: Link
 social:
   GitHub: https://github.com/lizhangqu
-  知乎: http://www.zhihu.com/people/zhangqu-li
+  知乎: https://www.zhihu.com/people/lizhangqu/
   微博: http://weibo.com/sbsujjbcy
-  Twitter: https://twitter.com/lizhangqu0504
-  G+: https://plus.google.com/u/0/114779957383765957041
-  
 
 
 # Social Links Icons
@@ -211,9 +208,7 @@ sidebar:
 links_title: Links
 links:
   区长的CSDN: http://blog.csdn.net/sbsujjbcy
-  geminiwen: https://geminiwen.xyz/
   camnter: https://www.camnter.com/
-  何老师: http://rarnu.xyz/
   Dim: http://dim.red/
   轩辕布: http://abner-nimengbo.cn/
   mark禽: http://blog.zhaiyifan.cn/
