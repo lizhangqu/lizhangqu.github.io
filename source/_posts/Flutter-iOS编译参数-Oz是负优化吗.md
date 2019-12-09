@@ -103,7 +103,10 @@ subprocess.check_call(["strip", "-x", "-S", linker_out])
 
 \-\-dsym用于产生dSYM符号表文件
 \-\-strip用于去除一些符号信息和调试信息
-他们的默认值都是false，也就是说我们刚才比较的大小，是未经过strip的大小。从脚本中看出strip的命令为：
+
+这两个参数的支持可以见提交 [Prepare for stripping and dsyming Flutter.framework](https://github.com/flutter/engine/pull/6247/files)，从时间节点上可以看出，要晚于 [Enable LTO for Android](https://github.com/flutter/buildroot/pull/165)
+
+这两个参数他们的默认值都是false，也就是说我们刚才比较的大小，是未经过strip的大小。从脚本中看出strip的命令为：
 
 ```
 strip -x -S /path/to/Flutter.framework/Flutter
