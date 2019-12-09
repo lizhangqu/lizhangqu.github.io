@@ -154,7 +154,7 @@ solutions = [
 ]
 ```
 
-如果想覆盖特定的依赖，可在custom_deps中重写，比如我想覆盖buildroot，从*git@github.com:flutter/engine.git*工程中的DEPS文件中可以找到buildroot对应的释放路径为src
+如果想覆盖特定的依赖，可在custom_deps中重写，比如我想覆盖buildroot，从**git@github.com:flutter/engine.git**工程中的DEPS文件中可以找到buildroot对应的释放路径为src
 
 ```
 'src': 'https://github.com/flutter/buildroot.git' + '@' + '5a33d6ab06fa2cc94cdd864ff238d2c58d6b7e4e',
@@ -177,7 +177,9 @@ solutions = [
 ]
 ```
 
-然后在engine目录下执行源码同步操作
+但是注意这种方式只能在首次检出时配置好，如果你之前检出过，然后修改了这个配置再同步是不会生效的，你得进入到src/flutter目录执行**git reset \-\-hard commitID**加上**gclient sync \-\-with_branch_heads \-\-with_tags \-\-verbose**才会生效。
+
+如果是首次检出，则直接在engine目录下执行源码同步操作
 
 ```
 cd /path/to/engine
@@ -273,6 +275,8 @@ solutions = [
   },
 ]
 ```
+
+但是如果你之前检出过，然后修改了这个配置再同步是不会生效的，你得进入到src/flutter目录执行**git reset \-\-hard commitID**加上**gclient sync \-\-with_branch_heads \-\-with_tags \-\-verbose**才会生效。
 
 
 ##### Xcode 32位支持
