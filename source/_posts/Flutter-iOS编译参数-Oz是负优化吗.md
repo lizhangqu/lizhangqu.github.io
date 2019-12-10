@@ -1,7 +1,7 @@
 title: Flutter iOS编译参数-Oz是负优化吗
 date: 2019-12-09 14:38:20
 categories: [Flutter]
-tags: [Flutter, Engine, Clang, iOS，瘦身]
+tags: [Flutter, Engine, Clang, iOS, 瘦身]
 ---
 
 2019年11月23日，字节跳动团队在其Flutter沙龙上有一个专题，[**如何缩减接近 50% 的 Flutter 包体积**](https://mp.weixin.qq.com/s/Ls3cDcqjlyOX80PXUO0wRw)，具体内容可以[**点击链接**](https://mp.weixin.qq.com/s/Ls3cDcqjlyOX80PXUO0wRw)进行查看，其中有一点提到了**优化 Engine 编译产物**，通过修改编译参数**-Os**为**-Oz**达到缩减包大小的目的。
