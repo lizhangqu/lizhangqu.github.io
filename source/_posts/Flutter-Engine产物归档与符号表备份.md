@@ -4,7 +4,7 @@ categories: [Flutter]
 tags: [Flutter, Engine, artifacts, symbols, backup, build, compile]
 ---
 
-自定义引擎编译完成后，我们需要将产物进行归档以备使用，同时为了定位到crash时发生的堆栈信息，我们需要将符号表进行备份，本文基于macOS环境下的v1.9.1产物，最新版的v1.12.13版本产物有所变化，有兴趣自行查看。
+自定义引擎编译完成后，我们需要将产物进行归档以备使用，同时为了定位到crash时发生的堆栈信息，我们需要将符号表进行备份，本文基于macOS环境下的v1.9.1产物，最新版的v1.12.13版本产物有所变化，有兴趣自行查看。Flutter官方提供的方式是基于Docker的方式，可以参考 https://github.com/flutter/flutter/tree/master/dev/ci 但是并没有提供Docker之外的工具用于产物归档和符号表备份。
 <!-- more -->
 
 
