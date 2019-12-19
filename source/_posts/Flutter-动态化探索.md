@@ -1,7 +1,7 @@
 title: Flutter 动态化探索
 date: 2019-03-22 09:23:50
 categories: [Flutter]
-tags: [flutter, patch, dynamic]
+tags: [Flutter, patch, dynamic]
 ---
 
 ### 前言
